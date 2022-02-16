@@ -59,4 +59,6 @@ samtools sort -t CB -m 10G -@ 10 -T /scratch/slice /Users/dd/work/secedo/tests/d
 
 # Pileup generation and variant calling
 
-Edit [variant_call.sh](https://github.com/ratschlab/secedo-evaluation/blob/main/breast_cancer/variant_call.sh) and set the `base_dir` variable to the location of the cell BAM files. Set the `slices` to the slices you would like to process (e.g. "A C E"). The script assumes a cluster run via LSF, but it's trivial to adapt to other cluster virtualization software.
+Edit [clustering.sh](https://github.com/ratschlab/secedo-evaluation/blob/main/breast_cancer/clustering.sh) and set the 
+`base_dir` variable to the location of the cell BAM files. Set the `slices` to the slices you would like to process 
+(e.g. "A C E"). The script assumes a cluster run via LSF, but it's trivial to adapt to other cluster virtualization software.

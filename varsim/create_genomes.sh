@@ -10,10 +10,10 @@ base_dir="/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim"
 # Outputs:
 #  - one fasta file for the healthy cell
 
-# don't forget to run: "conda activate py2" before running this script
+# don't forget to run: "conda activate secedo" before running this script
 
 # note the use of --disable_sim; this means that no reads are generated using Varsim (because it's slow and error
-# prone). Instead we generate the reads ourself directly using art_illumina in the next step
+# prone). Instead we generate the reads ourselves directly using art_illumina in the next step
 function generate_healthy_genome() {
   out_dir="${base_dir}/genomes"
 

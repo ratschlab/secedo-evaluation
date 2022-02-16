@@ -1,7 +1,9 @@
 This directory contains the scripts to generate synthetic data using varsim and cluster that data.
 ## Data
 We used the GRCH38.p13 human genome as the base genome: [https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39)
+
 We applied common mutations from dbsnp;  [ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606/VCF/common_all_20180418. vcf.gz](ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606/VCF/common_all_20180418.vcf.gz)
+
 Coding/noncoding mutations were randomly selected from Cosmic v94, available [here](https://cancer.sanger.ac.uk/cosmic/download) 
 (scroll to "VCF FILES", and download `VCF/CosmicCodingMuts.vcf.gz` and `VCF/CosmicNonCodingVariants.vcf.gz`).
 
@@ -32,7 +34,7 @@ conda activate secedo
 Tweak the [create_genomes.sh](https://github.com/ratschlab/secedo-evaluation/blob/main/varsim/create_genomes.sh) script to your needs. 
 This script uses the GRCH38 reference genome, common variations from dbSNP and cancer mutations from the Cosmic 
 database to create the healthy and tumor cells. 
-The script will generate the fasta files and the ground truth VCF files for the healthy and tumor genomes.
+
 
 ## Generate reads, align reads, create pileups and clustering
 The `clustering.sh` script does all of the steps above. Edit it and tweak it to your needs. Usage:

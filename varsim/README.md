@@ -1,6 +1,8 @@
 This directory contains the scripts to generate synthetic data using varsim and cluster that data.
 ## Data
-We used the GRCH38.p13 human genome as the base genome: [https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39)
+We used the GRCH38.p13 human genome as the base genome: 
+
+    [https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39)
 
 We applied common mutations from dbsnp 20180418:
 ```console

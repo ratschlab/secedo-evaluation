@@ -1,4 +1,5 @@
 # Data
+## Breast cancer dataset
 Download the BAM and BAI files for each of the 5 tumor slices (denoted with letters A to E) from the following location:
 
 Slice A: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-a-2000-cells-1-standard-1-1-0](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-a-2000-cells-1-standard-1-1-0)
@@ -10,6 +11,14 @@ Slice C: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-se
 Slice D: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-d-2000-cells-1-standard-1-1-0](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-d-2000-cells-1-standard-1-1-0)
 
 Slice E: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-e-2000-cells-1-standard-1-1-0](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-e-2000-cells-1-standard-1-1-0)
+
+## Chisel "ground truth" data
+All cells: [https://github.com/raphael-group/chisel-data/blob/master/patientS0/clones/all/mapping.tsv.gz](https://github.com/raphael-group/chisel-data/blob/master/patientS0/clones/all/mapping.tsv.gz)
+Slice A: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionA](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionA)
+Slice B: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionB](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionB)
+Slice C: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionC](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionC)
+Slice D: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionD](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionD)
+Slice E: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionE](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionE)
 
 # Preprocessing
 First, execute [1_run_filtering.sh](https://github.com/ratschlab/secedo-evaluation/blob/main/breast_cancer/preprocessing/1_run_filtering.sh) 

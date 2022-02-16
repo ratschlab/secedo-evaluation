@@ -1,9 +1,23 @@
-DIR="/cluster/work/grlab/projects/projects2019-secedo/10x_data_breastcancer/sliceB/"
-OLD_BAM=$DIR"breast_tissue_B_2k_possorted_bam.bam"
-NEW_BAM=$DIR"processed_files/breast_tissue_B_2k_possorted_bam_filtered.bam"
-LOG="log_1_filtering"
-echo > $LOG
+if [ "$#" -ne 1 ]; then
+            echo "Usage:"
+            echo "         1_run_filtering.sh <bam_file>"
+            exit 1
+fi
 
+if [ ! -f $1 ]; then
+    echo "File not found: $1"
+    exit 1
+fi
+
+DIR="$(dirname "$1")"
+OLD_BAM="${DIR}/$(basename -- $1)"
+NEW_BAM="${OLD_BAM%.bam}_pos_sorted.bam"
+LOG=$DIR/"run_filtering.log"
+
+echo "Filtering ${OLD_BAM} into ${NEW_BAM}"
+echo "Writing logs to: $LOG"
+echo > $LOG
+date > $LOG
 echo "Number of reads in the original BAM:" >> $LOG
 samtools view -c $OLD_BAM >> $LOG
 echo >> $LOG
@@ -19,4 +33,5 @@ echo "samtools view -h -b -f 0x2 -F 0x500 $OLD_BAM > $NEW_BAM" >> $LOG
 samtools view -h -b -f 0x2 -F 0x500 $OLD_BAM > $NEW_BAM
 echo "Number of reads after filtering:" >> $LOG
 samtools view -c $NEW_BAM  >> $LOG
+date > LOG
 echo >> $LOG

@@ -1,26 +1,43 @@
-DIR="/cluster/work/grlab/projects/projects2019-secedo/10x_data_breastcancer/sliceB/"
-NEW_BAM=$DIR"processed_files/breast_tissue_B_2k_possorted_bam_filtered.bam"
-NEW_BAM2=$DIR"processed_files/breast_tissue_B_2k_possorted_bam_filtered_withCBtag.bam"
-HEADER=$DIR"processed_files/tmp_header"
-TMP=$DIR"processed_files/tmp"
-LOG="log_2_filteringCB"
+if [ "$#" -ne 1 ]; then
+            echo "Usage:"
+            echo "         2_run_filteringCB.sh <bam_file>"
+            exit 1
+fi
+
+if [ ! -f $1 ]; then
+    echo "File not found: $1"
+    exit 1
+fi
+
+DIR="$(dirname "$1")"
+FILTERED_BAM="${DIR}/$(basename -- $1)"
+FILTERED_BAM_CB="${FILTERED_BAM%.bam}_CB.bam"
+LOG="${DIR}/run_filteringCB.log"
+TMP_FILE="${DIR}/tmp"
+HEADER="${DIR}/tmp_header"
+
+echo "Filtering ${FILTERED_BAM} into ${FILTERED_BAM_CB}"
+echo "Writing logs to: $LOG"
+
 echo > $LOG
+date >> $LOG
 
 
 #### filtering out reads not containing the CB tag
 echo "Filtering reads without CB tag" >> $LOG
 # save the header
-samtools view -H $NEW_BAM > $HEADER
+samtools view -H $FILTERED_BAM > $HEADER
 # filter the body
-echo "samtools view $NEW_BAM | grep CB:Z: > $TMP" >> $LOG
-samtools view $NEW_BAM | grep "CB:Z:"  > $TMP
-echo "cat $HEADER $TMP | samtools view -b > $NEW_BAM2" >> $LOG
-cat $HEADER $TMP | samtools view -b > $NEW_BAM2
+echo "samtools view $FILTERED_BAM | grep CB:Z: > $TMP_FILE" >> $LOG
+samtools view $FILTERED_BAM | grep "CB:Z:"  > $TMP_FILE
+echo "cat $HEADER $TMP_FILE | samtools view -b > $FILTERED_BAM_CB" >> $LOG
+cat $HEADER $TMP_FILE | samtools view -b > $FILTERED_BAM_CB
 echo "Number of reads with CB tag:" >> $LOG
-samtools view -c $NEW_BAM2 >> $LOG
+samtools view -c $FILTERED_BAM_CB >> $LOG
 echo >> $LOG
 # remove the temporary files
-rm $TMP $HEADER
+rm $TMP_FILE $HEADER
 # index the file
-echo "samtools index $NEW_BAM2" >> $LOG
-samtools index $NEW_BAM2
+echo "samtools index $FILTERED_BAM_CB" >> $LOG
+samtools index $FILTERED_BAM_CB
+date >> $LOG

@@ -1,20 +1,37 @@
-slice="C"
-DIR="/cluster/work/grlab/projects/projects2019-secedo/10x_data_breastcancer/slice${slice}/"
-NEW_BAM2=$DIR"processed_files/breast_tissue_${slice}_2k_possorted_bam_filtered_withCBtag.bam"
-NEW_BAM2_SORTED=$DIR"processed_files/breast_tissue_${slice}_2k_possorted_bam_filtered_withCBtag_sorted.bam"
-CELL_BAMS_DIR=$DIR"processed_files/cell_bams/"
-TAGS_FILE=$DIR"processed_files/allowedTags"
-PER_CELL_SUMMARY_FILE=$DIR"breast_tissue_${slice}_2k_per_cell_summary_metrics.csv"
-BAM_LIST=$CELL_BAMS_DIR"list_of_bams"
-LOG="log_3_splittingByCB"
+# Split a large BAM file containing data for multiple cells by the CB tag, resulting in one BAM per cell
+
+if [ "$#" -ne 1 ]; then
+            echo "Usage:"
+            echo "         3_run_splittingByCB.sh <bam_file>"
+            exit 1
+fi
+
+if [ ! -f $1 ]; then
+    echo "File not found: $1"
+    exit 1
+fi
+
+DIR="$(dirname "$1")"
+FILTERED_BAM_CB="${DIR}/$(basename -- $1)"
+LOG="${DIR}/run_splittingByCB.log"
+
+
+FILTERED_BAM_CB_SORTED="${FILTERED_BAM_CB%.bam}_sorted.bam"
+CELL_BAMS_DIR="${DIR}/cell_bams/"
+TAGS_FILE="${DIR}/allowedTags"
+PER_CELL_SUMMARY_FILE="${FILTERED_BAM_CB%.bam}_summary_metrics.csv"
+BAM_LIST="${CELL_BAMS_DIR}/list_of_bams"
+
+echo "Writing logs to: $LOG"
 echo > $LOG
+date >> $LOG
 
 ##### split based on CB tag to many smaller sam files
 # first sort the file based on CB tag
 echo "Sort by CB tag" >> $LOG
 scratch_dir="/scratch/slice${slice}"
 copy_command="echo Creating ${scratch_dir}...; mkdir -p ${scratch_dir}"
-sort_cmd="samtools sort -t CB -m 10G -@ 10 -T ${scratch_dir} ${NEW_BAM2} > ${NEW_BAM2_SORTED}"
+sort_cmd="samtools sort -t CB -m 10G -@ 10 -T ${scratch_dir} ${FILTERED_BAM_CB} > ${FILTERED_BAM_CB_SORTED}"
 echo ${sort_cmd} >> $LOG
 
 bsub  -K -J "sort_slice${slice}" -W 24:00 -n 10 -R "rusage[mem=22000,scratch=30000]" -R "span[hosts=1]" \
@@ -25,9 +42,10 @@ wait
 
 # allowed tags
 cat $PER_CELL_SUMMARY_FILE | cut -d ',' -f 1 | tail -n +2 > $TAGS_FILE
-
+date >> $LOG
 # then create a separate file for each allowed tag
 echo "Splitting based on CB tag" >> $LOG
 mkdir -p $CELL_BAMS_DIR
-echo "python3 ~/sc_clustering/split_by_CBtag.py -f $NEW_BAM2_SORTED -o $CELL_BAMS_DIR -t $TAGS_FILE" >> $LOG
-python3 ../../split_by_CBtag.py -f $NEW_BAM2_SORTED -o $CELL_BAMS_DIR -t $TAGS_FILE
+echo "python3 ~/sc_clustering/split_by_CBtag.py -f $FILTERED_BAM_CB_SORTED -o $CELL_BAMS_DIR -t $TAGS_FILE" >> $LOG
+python3 ../../split_by_CBtag.py -f $FILTERED_BAM_CB_SORTED -o $CELL_BAMS_DIR -t $TAGS_FILE
+date >> $LOG

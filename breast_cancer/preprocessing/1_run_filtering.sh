@@ -17,7 +17,7 @@ LOG=$DIR/"run_filtering.log"
 echo "Filtering ${OLD_BAM} into ${NEW_BAM}"
 echo "Writing logs to: $LOG"
 echo > $LOG
-date > $LOG
+date >> $LOG
 echo "Number of reads in the original BAM:" >> $LOG
 samtools view -c $OLD_BAM >> $LOG
 echo >> $LOG
@@ -33,5 +33,5 @@ echo "samtools view -h -b -f 0x2 -F 0x500 $OLD_BAM > $NEW_BAM" >> $LOG
 samtools view -h -b -f 0x2 -F 0x500 $OLD_BAM > $NEW_BAM
 echo "Number of reads after filtering:" >> $LOG
 samtools view -c $NEW_BAM  >> $LOG
-date > LOG
+date >> LOG
 echo >> $LOG

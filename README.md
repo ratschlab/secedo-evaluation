@@ -17,9 +17,9 @@ and should be easily adaptable for your needs.
   This dataset, provided by 10xGenomics, contains single-cell data from 5 different tumor slices of a breast cancer patient.
 
   Download instructions, scripts for preprocessing the Breast Cancer 10xGenomics data, scripts for creating pileup 
-  files and for running SECEDO are [here](https://github.com/danieldanciu/secedo-experiments/tree/main/breast_cancer).
+  files and for running SECEDO are [here](https://github.com/ratschlab/secedo-experiments/tree/main/breast_cancer).
 
 ### Synthetic Dataset
-  We also evaluated SECEDO on an extensive set of simulated data. Instructions on how to use the scripts that generate the simulated data starting from an altered GRCh38 human genome are [here](https://github.com/danieldanciu/secedo-experiments/tree/main/varsim)
+  We also evaluated SECEDO on an extensive set of simulated data. Instructions on how to use the scripts that generate the simulated data starting from an altered GRCh38 human genome are [here](https://github.com/ratschlab/secedo-experiments/tree/main/varsim)
 
 

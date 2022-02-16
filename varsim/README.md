@@ -2,7 +2,10 @@ This directory contains the scripts to generate synthetic data using varsim and 
 ## Data
 We used the GRCH38.p13 human genome as the base genome: [https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.39)
 
-We applied common mutations from dbsnp;  [ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606/VCF/common_all_20180418. vcf.gz](ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606/VCF/common_all_20180418.vcf.gz)
+We applied common mutations from dbsnp 20180418:
+```console
+    wget ftp://ftp.ncbi.nih.gov/snp/organisms/human_9606/VCF/common_all_20180418.vcf.gz
+```
 
 Coding/noncoding mutations were randomly selected from Cosmic v94, available [here](https://cancer.sanger.ac.uk/cosmic/download) 
 (scroll to "VCF FILES", and download `VCF/CosmicCodingMuts.vcf.gz` and `VCF/CosmicNonCodingVariants.vcf.gz`).

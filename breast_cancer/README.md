@@ -14,10 +14,15 @@ Slice E: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-se
 
 ## Chisel "ground truth" data
 All cells: [https://github.com/raphael-group/chisel-data/blob/master/patientS0/clones/all/mapping.tsv.gz](https://github.com/raphael-group/chisel-data/blob/master/patientS0/clones/all/mapping.tsv.gz)
+
 Slice A: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionA](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionA)
+
 Slice B: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionB](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionB)
+
 Slice C: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionC](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionC)
+
 Slice D: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionD](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionD)
+
 Slice E: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionE](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionE)
 
 # Preprocessing

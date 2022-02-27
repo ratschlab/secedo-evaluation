@@ -106,9 +106,10 @@ function variant_calling() {
         --clustering_type SPECTRAL6 --max_coverage 300 | tee ${log_dir}/secedo.log"
       echo "$command"
 
-      # needs about 20*80GB for slices ABCDE with phred 20, but only 20*4GB if using reads with phred >= 25
-      # for a single slice 20*30GB is more than enough
-      # needs 1.2TB (20*60GB) for slices BCDE
+      # for slices ABCDE needs 160GB if using min_different=3 (default), otherwise  about 1.6TB if using
+      # --min_different=1
+      # needs about 1.2TB (20*60GB) for slices BCDE (if using min_different=1), otherwise 120GB
+      # for a single slice 130GB is enough (if keeping all loci with at least 1 different base), otherwise 16GB
       bsub -K -J "secedo${slices}_${hprob#*.}_${seq_error_rate#*.}" -W 08:00 -n 20 -R "rusage[mem=80000]" \
            -R  "span[hosts=1]" -oo "${log_dir}/secedo.lsf.log" "${command}" &
     done

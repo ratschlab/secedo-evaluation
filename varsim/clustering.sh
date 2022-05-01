@@ -127,26 +127,26 @@ function variant_calling() {
   module load openblas
   work_dir="${base_dir}/${cov}"
   input_dir="${work_dir}/pileups"
-  silver="${code_dir}/build/secedo"
+  secedo="${code_dir}/build/secedo"
   flagfile="${code_dir}/flags_sim"
   for hprob in 0.3 0.5 0.8; do # TODO: set back to 0.5 # homozygous filtered loci, denoted with h
     for seq_error_rate in 0.005 0.01 0.05; do # sequencing error rate, denoted with theta
       for mutation_rate in 0.01 0.05; do # mutation rate in filtered loci, denoted with epsilon
-        out_dir="${work_dir}/silver_h${hprob#*.}_t${seq_error_rate#*.}_e${mutation_rate#*.}/" 
+        out_dir="${work_dir}/h${hprob}_theta${seq_error_rate}_epsilon${mutation_rate}/"
         mkdir -p "${out_dir}"
-        command="/usr/bin/time ${silver} -i ${input_dir}/ -o ${out_dir} --num_threads 20 --log_level=trace \
+        command="/usr/bin/time ${secedo} -i ${input_dir}/ -o ${out_dir} --num_threads 20 --log_level=trace \
              --flagfile ${flagfile} \
              --homozygous_filtered_rate=${hprob} \
              --seq_error_rate=${seq_error_rate} \
              --mutation_rate=${mutation_rate} \
              --reference_genome=${base_dir}/genomes/healthy.fa \
              --map_file=${base_dir}/genomes/healthy.map \
-             --clustering_type SPECTRAL6 --merge_count 1 --max_coverage 1000 | tee ${out_dir}/silver.log"
+             --clustering_type SPECTRAL6 --merge_count 1 --max_coverage 1000 | tee ${out_dir}/secedo.log"
              #       --pos_file=${base_dir}/cosmic/cosmic.vcf \
              # --clustering=${out_dir}/clustering \
         echo "$command"
 
-        bsub -K -J "silver" -W 04:00 -n 20 -R "rusage[mem=5000]" -R "span[hosts=1]" -oo "${out_dir}/silver.lsf.log" \
+        bsub -K -J "secedo" -W 04:00 -n 20 -R "rusage[mem=5000]" -R "span[hosts=1]" -oo "${out_dir}/secedo.lsf.log" \
            "${command}" &
       done
     done

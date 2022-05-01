@@ -1,7 +1,20 @@
 # Data
 ## Breast cancer dataset
-Download the BAM and BAI files for each of the 5 tumor slices (denoted with letters A to E) from the following location:
+Download the BAM and BAI files for each of the 5 tumor slices using the following script: 
 
+```
+for slice in A B C D E; do wget https://s3-us-west-2.amazonaws.com/10x.files/samples/cell-dna/1.1.0/breast_tissue_${slice}_2k/breast_tissue_${slice}_2k_possorted_bam.bam; wget https://cf.10xgenomics.com/samples/cell-dna/1.1.0/breast_tissue_${slice}_2k/breast_tissue_${slice}_2k_possorted_bam.bam.bai; done
+```
+MD5 sums:
+
+
+| Slice A | BAM: 6af2da98db8907d2fc8193ceb96afb01 | BAI: 440d7aaf854d37a36edd0557be1f047b |
+| Slice A | BAM: 6af2da98db8907d2fc8193ceb96afb01 | BAI: 440d7aaf854d37a36edd0557be1f047b |
+| Slice A | BAM: 6af2da98db8907d2fc8193ceb96afb01 | BAI: 440d7aaf854d37a36edd0557be1f047b |
+
+
+
+More information about each slice is available here:
 Slice A: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-a-2000-cells-1-standard-1-1-0](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-a-2000-cells-1-standard-1-1-0)
 
 Slice B: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-b-2000-cells-1-standard-1-1-0](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-b-2000-cells-1-standard-1-1-0)

@@ -4,8 +4,7 @@ We used SECEDO v1.0.3 in the experiments. You can install this version using:
 ````console
 conda install -c conda-forge -c bioconda secedo=1.0.3
 ````
-To install from source download the v.1.0.3 release from [https://doi.org/10.5281](https://doi.org/10.5281/zenodo.6088890) 
-and follow the installation instructions at [https://github.com/ratschlab/secedo](https://github.com/ratschlab/secedo).
+To install from source download the v.1.0.3 release from [![DOI](https://zenodo.org/badge/312234295.svg)](https://doi.org/10.5281/zenodo.6088890) and follow the installation instructions at [https://github.com/ratschlab/secedo](https://github.com/ratschlab/secedo).
 
 
 All scripts are written in basic bash and are using LSF to launch jobs. The scripts are readable and well-documented,

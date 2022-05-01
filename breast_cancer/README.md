@@ -6,37 +6,19 @@ Download the BAM and BAI files for each of the 5 tumor slices using the followin
 for slice in A B C D E; do wget https://s3-us-west-2.amazonaws.com/10x.files/samples/cell-dna/1.1.0/breast_tissue_${slice}_2k/breast_tissue_${slice}_2k_possorted_bam.bam; wget https://cf.10xgenomics.com/samples/cell-dna/1.1.0/breast_tissue_${slice}_2k/breast_tissue_${slice}_2k_possorted_bam.bam.bai; done
 ```
 MD5 sums:
-
-
-| Slice A | BAM: 6af2da98db8907d2fc8193ceb96afb01 | BAI: 440d7aaf854d37a36edd0557be1f047b |
-| Slice A | BAM: 6af2da98db8907d2fc8193ceb96afb01 | BAI: 440d7aaf854d37a36edd0557be1f047b |
-| Slice A | BAM: 6af2da98db8907d2fc8193ceb96afb01 | BAI: 440d7aaf854d37a36edd0557be1f047b |
-
-
-
-More information about each slice is available here:
-Slice A: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-a-2000-cells-1-standard-1-1-0](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-a-2000-cells-1-standard-1-1-0)
-
-Slice B: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-b-2000-cells-1-standard-1-1-0](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-b-2000-cells-1-standard-1-1-0)
-
-Slice C: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-c-2000-cells-1-standard-1-1-0](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-c-2000-cells-1-standard-1-1-0)
-
-Slice D: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-d-2000-cells-1-standard-1-1-0](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-d-2000-cells-1-standard-1-1-0)
-
-Slice E: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-e-2000-cells-1-standard-1-1-0](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-e-2000-cells-1-standard-1-1-0)
+| Slice | BAM | BAI |
+| ------- | -------- | ------- |
+| [A](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-a-2000-cells-1-standard-1-1-0) | 6af2da98db8907d2fc8193ceb96afb01 | 440d7aaf854d37a36edd0557be1f047b |
+| [B](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-b-2000-cells-1-standard-1-1-0) | 6ece8a436600503616ac5db8b5700e2b | 76977649d257484951d8b65e0f7061f3 |
+| [C](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-c-2000-cells-1-standard-1-1-0) | ea44baa851801efa745246e7ed79a278 | 93d19f8d123f01a7f2ad86d9ff2f3eab |
+| [D](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-d-2000-cells-1-standard-1-1-0) | a27de1b702b8b8c776daa33640a41117 | 606b3c7867382cc3a0e596aed7137ed6 |
+| [E](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-e-2000-cells-1-standard-1-1-0) | 0a5bc98adf1f4401151f49f75ebcd58c | 540cdff1f5d209b8ca1750c7392ec8dd |
 
 ## Chisel "ground truth" data
-All cells: [https://github.com/raphael-group/chisel-data/blob/master/patientS0/clones/all/mapping.tsv.gz](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/all/mapping.tsv.gz)
-
-Slice A: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionA](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/sectionA/mapping.tsv.gz)
-
-Slice B: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionB](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/sectionB/mapping.tsv.gz)
-
-Slice C: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionC](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/sectionC/mapping.tsv.gz)
-
-Slice D: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionD](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/sectionD/mapping.tsv.gz)
-
-Slice E: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionE](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/sectionE/mapping.tsv.gz)
+```
+for section in all sectionA sectionB sectionC sectionD sectionE; do wget https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/${section}/mapping.tsv.gz -O mapping_${section}.tsv.gz; done
+```
+Alternatively, download the data using your browser from the [Chisel github repository](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones).
 
 # Preprocessing
 First, execute [1_run_filtering.sh](https://github.com/ratschlab/secedo-evaluation/blob/main/breast_cancer/preprocessing/1_run_filtering.sh) 

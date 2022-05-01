@@ -13,17 +13,17 @@ Slice D: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-se
 Slice E: [https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-e-2000-cells-1-standard-1-1-0](https://www.10xgenomics.com/resources/datasets/breast-tissue-nuclei-section-e-2000-cells-1-standard-1-1-0)
 
 ## Chisel "ground truth" data
-All cells: [https://github.com/raphael-group/chisel-data/blob/master/patientS0/clones/all/mapping.tsv.gz](https://github.com/raphael-group/chisel-data/blob/master/patientS0/clones/all/mapping.tsv.gz)
+All cells: [https://github.com/raphael-group/chisel-data/blob/master/patientS0/clones/all/mapping.tsv.gz](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/all/mapping.tsv.gz)
 
-Slice A: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionA](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionA)
+Slice A: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionA](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/sectionA/mapping.tsv.gz)
 
-Slice B: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionB](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionB)
+Slice B: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionB](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/sectionB/mapping.tsv.gz)
 
-Slice C: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionC](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionC)
+Slice C: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionC](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/sectionC/mapping.tsv.gz)
 
-Slice D: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionD](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionD)
+Slice D: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionD](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/sectionD/mapping.tsv.gz)
 
-Slice E: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionE](https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionE)
+Slice E: [https://github.com/raphael-group/chisel-data/tree/master/patientS0/clones/sectionE](https://github.com/raphael-group/chisel-data/blob/a9df050179fe9b303d4a9546bb51ffdb29a17bf9/patientS0/clones/sectionE/mapping.tsv.gz)
 
 # Preprocessing
 First, execute [1_run_filtering.sh](https://github.com/ratschlab/secedo-evaluation/blob/main/breast_cancer/preprocessing/1_run_filtering.sh) 

@@ -131,7 +131,7 @@ function variant_calling() {
   flagfile="${code_dir}/flags_sim"
   for hprob in 0.3 0.5 0.8; do # TODO: set back to 0.5 # homozygous filtered loci, denoted with h
     for seq_error_rate in 0.005 0.01 0.05; do # sequencing error rate, denoted with theta
-      for mutation_rate in 0.1 0.2; do # mutation rate in filtered loci, denoted with epsilon
+      for mutation_rate in 0.01 0.05 0.1 0.2; do # mutation rate in filtered loci, denoted with epsilon
         out_dir="${work_dir}/h${hprob}_theta${seq_error_rate}_epsilon${mutation_rate}/"
         mkdir -p "${out_dir}"
         command="/usr/bin/time ${secedo} -i ${input_dir}/ -o ${out_dir} --num_threads 20 --log_level=trace \

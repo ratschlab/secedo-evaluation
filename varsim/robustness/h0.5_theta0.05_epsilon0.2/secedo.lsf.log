@@ -1,13 +1,13 @@
-Sender: LSF System <lsfadmin@le-g3-011>
-Subject: Job 4507671: <secedo> in cluster <ethsec> Done
+Sender: LSF System <lsfadmin@le-gtx-005>
+Subject: Job 4508321: <secedo> in cluster <ethsec> Done
 
-Job <secedo> was submitted from host <ethsec-login-02> by user <ddanciu> in cluster <ethsec> at Sun May  1 14:17:09 2022
-Job was executed on host(s) <20*le-g3-011>, in queue <normal.4h>, as user <ddanciu> in cluster <ethsec> at Sun May  1 14:17:32 2022
+Job <secedo> was submitted from host <ethsec-login-02> by user <ddanciu> in cluster <ethsec> at Sun May  1 23:13:34 2022
+Job was executed on host(s) <20*le-gtx-005>, in queue <normal.4h>, as user <ddanciu> in cluster <ethsec> at Sun May  1 23:13:40 2022
 </cluster/home/ddanciu> was used as the home directory.
 </cluster/home/ddanciu/somatic_variant_calling/secedo-evaluation/varsim> was used as the working directory.
-Started at Sun May  1 14:17:32 2022
-Terminated at Sun May  1 14:28:44 2022
-Results reported at Sun May  1 14:28:44 2022
+Started at Sun May  1 23:13:40 2022
+Terminated at Sun May  1 23:36:09 2022
+Results reported at Sun May  1 23:36:09 2022
 
 Your job looked like:
 
@@ -20,615 +20,587 @@ Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   9379.98 sec.
-    Max Memory :                                 13434 MB
-    Average Memory :                             11031.88 MB
+    CPU time :                                   16057.27 sec.
+    Max Memory :                                 13337 MB
+    Average Memory :                             9748.62 MB
     Total Requested Memory :                     100000.00 MB
-    Delta Memory :                               86566.00 MB
+    Delta Memory :                               86663.00 MB
     Max Swap :                                   -
     Max Processes :                              6
     Max Threads :                                26
-    Run time :                                   671 sec.
-    Turnaround time :                            695 sec.
+    Run time :                                   1349 sec.
+    Turnaround time :                            1355 sec.
 
 The output (if any) follows:
 
-[2022-05-01 14:17:34.982] [svc] [[32minfo[m] Looking for binary pileup files in "/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/"
-[2022-05-01 14:17:34.987] [svc] [[32minfo[m] Found 23 binary pileup files: "/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_7.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_20.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_5.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_17.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_3.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_10.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_13.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_1.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_16.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_15.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_22.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_21.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_9.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_18.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_2.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_12.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_6.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_14.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_4.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_X.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_19.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_8.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_11.pileup.bin"
+[2022-05-01 23:13:42.245] [secedo] [[32minfo[m] Looking for binary pileup files in "/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/"
+[2022-05-01 23:13:42.250] [secedo] [[32minfo[m] Found 23 binary pileup files: "/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_7.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_20.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_5.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_17.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_3.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_10.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_13.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_1.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_16.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_15.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_22.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_21.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_9.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_18.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_2.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_12.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_6.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_14.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_4.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_X.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_19.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_8.pileup.bin","/cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_11.pileup.bin"
 
 Reading progress
-[2022-05-01 14:17:35.720]	  0.0%, 0/4184088592
-[2022-05-01 14:17:35.941]	  1.0%, 41842368/4184088592
-[2022-05-01 14:17:36.003]	  2.0%, 83682516/4184088592
-[2022-05-01 14:17:36.075]	  3.0%, 125523804/4184088592
-[2022-05-01 14:17:36.143]	  4.0%, 167364780/4184088592
-[2022-05-01 14:17:36.213]	  5.0%, 209205096/4184088592
-[2022-05-01 14:17:36.282]	  6.0%, 251046774/4184088592
-[2022-05-01 14:17:36.359]	  7.0%, 292886934/4184088592
-[2022-05-01 14:17:36.385] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_X.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:36.439]	  8.0%, 334727892/4184088592
-[2022-05-01 14:17:36.527]	  9.0%, 376568280/4184088592
-[2022-05-01 14:17:36.576]	 10.0%, 418409850/4184088592
-[2022-05-01 14:17:36.630]	 11.0%, 460250208/4184088592
-[2022-05-01 14:17:36.673]	 12.0%, 502091076/4184088592
-[2022-05-01 14:17:36.714]	 13.0%, 543931578/4184088592
-[2022-05-01 14:17:36.751]	 14.0%, 585773634/4184088592
-[2022-05-01 14:17:36.798]	 15.0%, 627613350/4184088592
-[2022-05-01 14:17:36.853]	 16.0%, 669455178/4184088592
-[2022-05-01 14:17:36.915]	 17.0%, 711296772/4184088592
-[2022-05-01 14:17:36.973]	 18.0%, 753136368/4184088592
-[2022-05-01 14:17:37.023]	 19.0%, 794978412/4184088592
-[2022-05-01 14:17:37.076]	 20.0%, 836818020/4184088592
-[2022-05-01 14:17:37.130]	 21.0%, 878659032/4184088592
-[2022-05-01 14:17:37.193]	 22.0%, 920499894/4184088592
-[2022-05-01 14:17:37.245]	 23.0%, 962341818/4184088592
-[2022-05-01 14:17:37.300]	 24.0%, 1004182866/4184088592
-[2022-05-01 14:17:37.359]	 25.0%, 1046022624/4184088592
-[2022-05-01 14:17:37.412]	 26.0%, 1087863354/4184088592
-[2022-05-01 14:17:37.470]	 27.0%, 1129705170/4184088592
-[2022-05-01 14:17:37.525]	 28.0%, 1171545948/4184088592
-[2022-05-01 14:17:37.579]	 29.0%, 1213386342/4184088592
-[2022-05-01 14:17:37.645]	 30.0%, 1255227510/4184088592
-[2022-05-01 14:17:37.728]	 31.0%, 1297069044/4184088592
-[2022-05-01 14:17:37.803]	 32.0%, 1338908508/4184088592
-[2022-05-01 14:17:37.862]	 33.0%, 1380750444/4184088592
-[2022-05-01 14:17:37.931]	 34.0%, 1422591690/4184088592
-[2022-05-01 14:17:38.001]	 35.0%, 1464432474/4184088592
-[2022-05-01 14:17:38.064]	 36.0%, 1506273780/4184088592
-[2022-05-01 14:17:38.136]	 37.0%, 1548113298/4184088592
-[2022-05-01 14:17:38.165] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_15.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:38.216]	 38.0%, 1589954430/4184088592
-[2022-05-01 14:17:38.288]	 39.0%, 1631794974/4184088592
-[2022-05-01 14:17:38.367]	 40.0%, 1673635932/4184088592
-[2022-05-01 14:17:38.449]	 41.0%, 1715477010/4184088592
-[2022-05-01 14:17:38.530]	 42.0%, 1757318922/4184088592
-[2022-05-01 14:17:38.613]	 43.0%, 1799159028/4184088592
-[2022-05-01 14:17:38.708]	 44.0%, 1841000088/4184088592
-[2022-05-01 14:17:38.793]	 45.0%, 1882840194/4184088592
-[2022-05-01 14:17:38.872] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_20.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:38.881]	 46.0%, 1924681644/4184088592
-[2022-05-01 14:17:38.978]	 47.0%, 1966521708/4184088592
-[2022-05-01 14:17:39.077]	 48.0%, 2008362768/4184088592
-[2022-05-01 14:17:39.176]	 49.0%, 2050203474/4184088592
-[2022-05-01 14:17:39.273]	 50.0%, 2092045620/4184088592
-[2022-05-01 14:17:39.380]	 51.0%, 2133885828/4184088592
-[2022-05-01 14:17:39.489]	 52.0%, 2175726408/4184088592
-[2022-05-01 14:17:39.578]	 53.0%, 2217567504/4184088592
-[2022-05-01 14:17:39.662]	 54.0%, 2259409062/4184088592
-[2022-05-01 14:17:39.747]	 55.0%, 2301248718/4184088592
-[2022-05-01 14:17:39.756] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_19.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:39.842]	 56.0%, 2343090978/4184088592
-[2022-05-01 14:17:39.932]	 57.0%, 2384931786/4184088592
-[2022-05-01 14:17:40.042]	 58.0%, 2426772072/4184088592
-[2022-05-01 14:17:40.122]	 59.0%, 2468613798/4184088592
-[2022-05-01 14:17:40.127] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_18.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:40.219]	 60.0%, 2510453220/4184088592
-[2022-05-01 14:17:40.314]	 61.0%, 2552294544/4184088592
-[2022-05-01 14:17:40.319] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_21.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:40.336] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_16.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:40.457]	 62.0%, 2594134944/4184088592
-[2022-05-01 14:17:40.571]	 63.0%, 2635977234/4184088592
-[2022-05-01 14:17:40.572] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_11.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:40.576] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_13.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:40.711]	 64.0%, 2677817412/4184088592
-[2022-05-01 14:17:40.831]	 65.0%, 2719659072/4184088592
-[2022-05-01 14:17:40.861] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_17.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:40.993]	 66.0%, 2761498812/4184088592
-[2022-05-01 14:17:41.168]	 67.0%, 2803340538/4184088592
-[2022-05-01 14:17:41.316]	 68.0%, 2845181424/4184088592
-[2022-05-01 14:17:41.478]	 69.0%, 2887022604/4184088592
-[2022-05-01 14:17:41.510] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_1.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:41.672]	 70.0%, 2928862812/4184088592
-[2022-05-01 14:17:41.862]	 71.0%, 2970704202/4184088592
-[2022-05-01 14:17:42.037]	 72.0%, 3012545406/4184088592
-[2022-05-01 14:17:42.230]	 73.0%, 3054384858/4184088592
-[2022-05-01 14:17:42.425]	 74.0%, 3096226728/4184088592
-[2022-05-01 14:17:42.606]	 75.0%, 3138067974/4184088592
-[2022-05-01 14:17:42.786]	 76.0%, 3179908596/4184088592
-[2022-05-01 14:17:42.897] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_9.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:42.989]	 77.0%, 3221748642/4184088592
-[2022-05-01 14:17:43.004] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_7.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:43.268]	 78.0%, 3263590224/4184088592
-[2022-05-01 14:17:43.543]	 79.0%, 3305431572/4184088592
-[2022-05-01 14:17:43.807] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_8.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:43.845]	 80.0%, 3347272308/4184088592
-[2022-05-01 14:17:44.067] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_3.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:44.219]	 81.0%, 3389112774/4184088592
-[2022-05-01 14:17:44.551]	 82.0%, 3430954080/4184088592
-[2022-05-01 14:17:44.739] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_4.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:44.995]	 83.0%, 3472793592/4184088592
-[2022-05-01 14:17:45.432] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_6.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:45.443]	 84.0%, 3514634352/4184088592
-[2022-05-01 14:17:45.637] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_22.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:46.090]	 85.0%, 3556475820/4184088592
-[2022-05-01 14:17:46.391] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_5.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:47.173]	 86.0%, 3598316616/4184088592
-[2022-05-01 14:17:48.155] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_2.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:49.840]	 87.0%, 3640157536/4184088592
-[2022-05-01 14:17:50.016]	 88.0%, 3681999130/4184088592
-[2022-05-01 14:17:50.068]	 89.0%, 3723840148/4184088592
-[2022-05-01 14:17:50.122]	 90.0%, 3765680380/4184088592
-[2022-05-01 14:17:50.128] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_14.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:51.243]	 91.0%, 3807521716/4184088592
-[2022-05-01 14:17:51.385]	 92.0%, 3849361900/4184088592
-[2022-05-01 14:17:51.458]	 93.0%, 3891203326/4184088592
-[2022-05-01 14:17:51.816]	 94.0%, 3933043348/4184088592
-[2022-05-01 14:17:52.263] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_12.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:53.183]	 95.0%, 3974885308/4184088592
-[2022-05-01 14:17:53.321]	 96.0%, 4016726098/4184088592
-[2022-05-01 14:17:53.371]	 97.0%, 4058566486/4184088592
-[2022-05-01 14:17:53.419]	 98.0%, 4100406772/4184088592
-[2022-05-01 14:17:53.470]	 99.0%, 4142247832/4184088592
-[2022-05-01 14:17:53.520]	100.0%, 4184088592/4184088592
+[2022-05-01 23:13:45.511]	  0.0%, 0/4184088592
+[2022-05-01 23:13:45.711]	  1.0%, 41842086/4184088592
+[2022-05-01 23:13:45.793]	  2.0%, 83682720/4184088592
+[2022-05-01 23:13:45.871]	  3.0%, 125524050/4184088592
+[2022-05-01 23:13:45.936]	  4.0%, 167364300/4184088592
+[2022-05-01 23:13:46.009]	  5.0%, 209205618/4184088592
+[2022-05-01 23:13:46.082]	  6.0%, 251045556/4184088592
+[2022-05-01 23:13:46.159]	  7.0%, 292886268/4184088592
+[2022-05-01 23:13:46.223]	  8.0%, 334728222/4184088592
+[2022-05-01 23:13:46.287]	  9.0%, 376569096/4184088592
+[2022-05-01 23:13:46.351]	 10.0%, 418409844/4184088592
+[2022-05-01 23:13:46.410]	 11.0%, 460251264/4184088592
+[2022-05-01 23:13:46.473]	 12.0%, 502090962/4184088592
+[2022-05-01 23:13:46.541]	 13.0%, 543932994/4184088592
+[2022-05-01 23:13:46.607]	 14.0%, 585772512/4184088592
+[2022-05-01 23:13:46.674]	 15.0%, 627613710/4184088592
+[2022-05-01 23:13:46.744]	 16.0%, 669454242/4184088592
+[2022-05-01 23:13:46.813]	 17.0%, 711296412/4184088592
+[2022-05-01 23:13:46.876]	 18.0%, 753137304/4184088592
+[2022-05-01 23:13:46.942]	 19.0%, 794978400/4184088592
+[2022-05-01 23:13:47.013]	 20.0%, 836817888/4184088592
+[2022-05-01 23:13:47.086]	 21.0%, 878659452/4184088592
+[2022-05-01 23:13:47.162]	 22.0%, 920500974/4184088592
+[2022-05-01 23:13:47.248]	 23.0%, 962341824/4184088592
+[2022-05-01 23:13:47.311]	 24.0%, 1004182326/4184088592
+[2022-05-01 23:13:47.377]	 25.0%, 1046023422/4184088592
+[2022-05-01 23:13:47.414] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_X.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:47.446]	 26.0%, 1087864182/4184088592
+[2022-05-01 23:13:47.515]	 27.0%, 1129704432/4184088592
+[2022-05-01 23:13:47.583]	 28.0%, 1171545840/4184088592
+[2022-05-01 23:13:47.667]	 29.0%, 1213386636/4184088592
+[2022-05-01 23:13:47.740]	 30.0%, 1255227156/4184088592
+[2022-05-01 23:13:47.807]	 31.0%, 1297067448/4184088592
+[2022-05-01 23:13:47.878]	 32.0%, 1338908724/4184088592
+[2022-05-01 23:13:47.950]	 33.0%, 1380749376/4184088592
+[2022-05-01 23:13:48.031]	 34.0%, 1422590862/4184088592
+[2022-05-01 23:13:48.117]	 35.0%, 1464430980/4184088592
+[2022-05-01 23:13:48.190]	 36.0%, 1506273042/4184088592
+[2022-05-01 23:13:48.254]	 37.0%, 1548113100/4184088592
+[2022-05-01 23:13:48.316]	 38.0%, 1589954598/4184088592
+[2022-05-01 23:13:48.376]	 39.0%, 1631794854/4184088592
+[2022-05-01 23:13:48.416] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_20.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:48.447]	 40.0%, 1673636880/4184088592
+[2022-05-01 23:13:48.487] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_19.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:48.525]	 41.0%, 1715477700/4184088592
+[2022-05-01 23:13:48.600]	 42.0%, 1757318112/4184088592
+[2022-05-01 23:13:48.678] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_15.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:48.681]	 43.0%, 1799160120/4184088592
+[2022-05-01 23:13:48.777]	 44.0%, 1840999512/4184088592
+[2022-05-01 23:13:48.866]	 45.0%, 1882841274/4184088592
+[2022-05-01 23:13:48.970]	 46.0%, 1924681140/4184088592
+[2022-05-01 23:13:49.073]	 47.0%, 1966522686/4184088592
+[2022-05-01 23:13:49.164]	 48.0%, 2008363776/4184088592
+[2022-05-01 23:13:49.201] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_18.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:49.262]	 49.0%, 2050204674/4184088592
+[2022-05-01 23:13:49.374]	 50.0%, 2092045386/4184088592
+[2022-05-01 23:13:49.479]	 51.0%, 2133885540/4184088592
+[2022-05-01 23:13:49.496] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_17.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:49.578]	 52.0%, 2175726300/4184088592
+[2022-05-01 23:13:49.687]	 53.0%, 2217566964/4184088592
+[2022-05-01 23:13:49.808]	 54.0%, 2259408138/4184088592
+[2022-05-01 23:13:49.917]	 55.0%, 2301248874/4184088592
+[2022-05-01 23:13:50.027] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_16.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:50.035]	 56.0%, 2343091206/4184088592
+[2022-05-01 23:13:50.156]	 57.0%, 2384931108/4184088592
+[2022-05-01 23:13:50.280]	 58.0%, 2426771766/4184088592
+[2022-05-01 23:13:50.406]	 59.0%, 2468613282/4184088592
+[2022-05-01 23:13:50.536]	 60.0%, 2510454006/4184088592
+[2022-05-01 23:13:50.652]	 61.0%, 2552295474/4184088592
+[2022-05-01 23:13:50.762] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_13.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:50.768]	 62.0%, 2594135586/4184088592
+[2022-05-01 23:13:50.902]	 63.0%, 2635977030/4184088592
+[2022-05-01 23:13:51.039]	 64.0%, 2677817766/4184088592
+[2022-05-01 23:13:51.176]	 65.0%, 2719657614/4184088592
+[2022-05-01 23:13:51.315]	 66.0%, 2761498464/4184088592
+[2022-05-01 23:13:51.441]	 67.0%, 2803340406/4184088592
+[2022-05-01 23:13:51.567]	 68.0%, 2845181244/4184088592
+[2022-05-01 23:13:51.686]	 69.0%, 2887021890/4184088592
+[2022-05-01 23:13:51.817]	 70.0%, 2928862644/4184088592
+[2022-05-01 23:13:51.821] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_9.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:51.850] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_11.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:51.986]	 71.0%, 2970704154/4184088592
+[2022-05-01 23:13:52.151]	 72.0%, 3012544734/4184088592
+[2022-05-01 23:13:52.319]	 73.0%, 3054385608/4184088592
+[2022-05-01 23:13:52.490]	 74.0%, 3096225660/4184088592
+[2022-05-01 23:13:52.679]	 75.0%, 3138067884/4184088592
+[2022-05-01 23:13:52.777] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_8.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:52.887]	 76.0%, 3179908206/4184088592
+[2022-05-01 23:13:53.044] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_1.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:53.194]	 77.0%, 3221748798/4184088592
+[2022-05-01 23:13:53.361] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_7.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:53.446]	 78.0%, 3263589654/4184088592
+[2022-05-01 23:13:53.710]	 79.0%, 3305430264/4184088592
+[2022-05-01 23:13:53.982]	 80.0%, 3347271876/4184088592
+[2022-05-01 23:13:54.234]	 81.0%, 3389112654/4184088592
+[2022-05-01 23:13:54.352] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_6.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:54.533]	 82.0%, 3430953342/4184088592
+[2022-05-01 23:13:54.844]	 83.0%, 3472793970/4184088592
+[2022-05-01 23:13:54.948] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_5.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:55.166]	 84.0%, 3514635024/4184088592
+[2022-05-01 23:13:55.471] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_4.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:55.514]	 85.0%, 3556475328/4184088592
+[2022-05-01 23:13:55.578] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_3.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:56.123] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_22.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:56.171]	 86.0%, 3598317756/4184088592
+[2022-05-01 23:13:56.329] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_21.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:57.013] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_2.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:13:58.757]	 87.0%, 3640157536/4184088592
+[2022-05-01 23:13:58.852]	 88.0%, 3681999130/4184088592
+[2022-05-01 23:13:59.009]	 89.0%, 3723840148/4184088592
+[2022-05-01 23:13:59.456]	 90.0%, 3765680380/4184088592
+[2022-05-01 23:13:59.500] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_14.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:14:01.026]	 91.0%, 3807521716/4184088592
+[2022-05-01 23:14:01.096]	 92.0%, 3849361900/4184088592
+[2022-05-01 23:14:01.167]	 93.0%, 3891203326/4184088592
+[2022-05-01 23:14:01.240]	 94.0%, 3933043348/4184088592
+[2022-05-01 23:14:01.380] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_12.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:14:02.797]	 95.0%, 3974885308/4184088592
+[2022-05-01 23:14:03.020]	 96.0%, 4016726098/4184088592
+[2022-05-01 23:14:03.128]	 97.0%, 4058566486/4184088592
+[2022-05-01 23:14:03.228]	 98.0%, 4100406772/4184088592
+[2022-05-01 23:14:03.313]	 99.0%, 4142247832/4184088592
+[2022-05-01 23:14:03.400]	100.0%, 4184088592/4184088592
 
-[2022-05-01 14:17:53.520] [svc] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_10.pileup.bin: found 7250 cell ids, 7250 after grouping
-[2022-05-01 14:17:54.049] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:17:55.820] [svc] [[37mtrace[m] Avg coverage for cluster : 132.4986743242442. Total positions: 118053
-[2022-05-01 14:17:55.981] [svc] [[32minfo[m] Computing similarity matrix...
+[2022-05-01 23:14:03.400] [secedo] [[37mtrace[m] /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/big/pileups/chromosome_10.pileup.bin: found 7250 cell ids, 7250 after grouping
+[2022-05-01 23:14:03.556] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:14:06.785] [secedo] [[37mtrace[m] Avg coverage for cluster : 132.8673623954205. Total positions: 113550
+[2022-05-01 23:14:07.124] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:17:56.168]	  0.0%, 0/118053
-[2022-05-01 14:18:08.205]	 10.0%, 11805/118053
-[2022-05-01 14:18:20.135]	 20.0%, 23610/118053
-[2022-05-01 14:18:31.935]	 30.0%, 35415/118053
-[2022-05-01 14:18:43.293]	 40.0%, 47220/118053
-[2022-05-01 14:18:54.259]	 50.0%, 59025/118053
-[2022-05-01 14:19:05.552]	 60.0%, 70830/118053
-[2022-05-01 14:19:17.053]	 70.0%, 82635/118053
-[2022-05-01 14:19:28.228]	 80.0%, 94440/118053
-[2022-05-01 14:19:37.592]	 90.0%, 106245/118053
-[2022-05-01 14:19:46.126]	100.0%, 118050/118053
-[2022-05-01 14:19:46.126]	100.0%, 118053/118053
+[2022-05-01 23:14:07.668]	  0.0%, 0/113550
+[2022-05-01 23:14:54.244]	 10.0%, 11355/113550
+[2022-05-01 23:15:41.098]	 20.0%, 22710/113550
+[2022-05-01 23:16:20.250]	 30.0%, 34065/113550
+[2022-05-01 23:16:59.302]	 40.0%, 45420/113550
+[2022-05-01 23:17:37.619]	 50.0%, 56775/113550
+[2022-05-01 23:18:19.686]	 60.0%, 68130/113550
+[2022-05-01 23:18:59.720]	 70.0%, 79485/113550
+[2022-05-01 23:19:40.006]	 80.0%, 90840/113550
+[2022-05-01 23:20:13.419]	 90.0%, 102195/113550
+[2022-05-01 23:20:50.558]	100.0%, 113550/113550
 
-[2022-05-01 14:19:46.184] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:19:46.295] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:21:03.863] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 15.129645607782548/18.131547484252838/18.432573237893006/19.365853137084468	aic 1/2/3/4 -219339.86131284694/-262825.43852166616/-267148.3119494486/-280638.8704877248	bic 1/2/3/4 -219202.08617788996/-262542.99949500436/-266721.209031082/-280067.10367765336
-[2022-05-01 14:21:03.864] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:21:03.929] [svc] [[37mtrace[m] Cluster 1 has 2000 cells
-[2022-05-01 14:21:03.929] [svc] [[37mtrace[m] Cluster 2 has 5250 cells
-[2022-05-01 14:21:03.929] [svc] [[37mtrace[m] Cluster 3 has 0 cells
-[2022-05-01 14:21:03.929] [svc] [[37mtrace[m] Cluster 4 has 0 cells
-[2022-05-01 14:21:03.978] [svc] [[32minfo[m] Skipping clustering refinement via expectation maximization...
-[2022-05-01 14:21:03.981] [svc] [[32minfo[m] 
+[2022-05-01 23:20:50.677] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:20:50.881] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:22:35.188] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 15.129678034465833/16.37820988249342/19.051644620120623/19.284357727987054	aic 1/2/3/4 -219340.33149975457/-237402.04329615456/-276124.846991749/-279457.1870558123	bic 1/2/3/4 -219202.55636479758/-237119.60426949276/-275697.7440733824/-278885.42024574085
+[2022-05-01 23:22:35.188] [secedo] [[37mtrace[m] Attempting to cluster into 2 clusters
+[2022-05-01 23:22:35.260] [secedo] [[37mtrace[m] Cluster 1 has 5250 cells
+[2022-05-01 23:22:35.260] [secedo] [[37mtrace[m] Cluster 2 has 2000 cells
+[2022-05-01 23:22:35.260] [secedo] [[37mtrace[m] Cluster 3 has 0 cells
+[2022-05-01 23:22:35.260] [secedo] [[37mtrace[m] Cluster 4 has 0 cells
+[2022-05-01 23:22:35.361] [secedo] [[32minfo[m] Skipping clustering refinement via expectation maximization...
+[2022-05-01 23:22:35.365] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster A with 2000 elements
-[2022-05-01 14:21:03.981] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:21:05.307] [svc] [[37mtrace[m] Avg coverage for cluster A: 69.42837728661391. Total positions: 186903
-[2022-05-01 14:21:05.550] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster A with 5250 elements
+[2022-05-01 23:22:35.365] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:22:37.961] [secedo] [[37mtrace[m] Avg coverage for cluster A: 89.2115294246216. Total positions: 91505
+[2022-05-01 23:22:38.143] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:21:05.592]	  0.0%, 0/186903
-[2022-05-01 14:21:09.109]	 10.0%, 18690/186903
-[2022-05-01 14:21:12.622]	 20.0%, 37380/186903
-[2022-05-01 14:21:16.075]	 30.0%, 56070/186903
-[2022-05-01 14:21:19.494]	 40.0%, 74760/186903
-[2022-05-01 14:21:22.887]	 50.0%, 93450/186903
-[2022-05-01 14:21:26.241]	 60.0%, 112140/186903
-[2022-05-01 14:21:29.895]	 70.0%, 130830/186903
-[2022-05-01 14:21:33.504]	 80.0%, 149520/186903
-[2022-05-01 14:21:37.172]	 90.0%, 168210/186903
-[2022-05-01 14:21:40.439]	100.0%, 186900/186903
-[2022-05-01 14:21:40.439]	100.0%, 186903/186903
+[2022-05-01 23:22:38.402]	  0.0%, 0/91505
+[2022-05-01 23:22:52.574]	 10.0%, 9150/91505
+[2022-05-01 23:23:07.172]	 20.0%, 18300/91505
+[2022-05-01 23:23:21.560]	 30.0%, 27450/91505
+[2022-05-01 23:23:37.042]	 40.0%, 36600/91505
+[2022-05-01 23:23:51.109]	 50.0%, 45750/91505
+[2022-05-01 23:24:08.130]	 60.0%, 54900/91505
+[2022-05-01 23:24:23.776]	 70.0%, 64050/91505
+[2022-05-01 23:24:37.222]	 80.0%, 73200/91505
+[2022-05-01 23:24:50.328]	 90.0%, 82350/91505
+[2022-05-01 23:25:01.482]	100.0%, 91500/91505
+[2022-05-01 23:25:01.487]	100.0%, 91505/91505
 
-[2022-05-01 14:21:40.461] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:21:40.479] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:21:42.199] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 11.907563921581474/11.909811446498328/11.91090477302487/11.91047888754607	aic 1/2/3/4 -47590.255686325894/-47557.24578599331/-47519.61909209948/-47475.915550184276	bic 1/2/3/4 -47478.237637135055/-47327.608785152086/-47172.36313960787/-47011.04064604228
-[2022-05-01 14:21:42.199] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:21:42.232] [svc] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
-[2022-05-01 14:21:42.263] [svc] [[32minfo[m] 
+[2022-05-01 23:25:01.566] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:25:01.684] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:25:41.414] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 14.321178231139063/16.32923139547349/16.393946350412385/16.684900809573737	aic 1/2/3/4 -150332.37142696016/-171374.92965247162/-172012.43667933004/-175025.45850052423	bic 1/2/3/4 -150201.05175984846/-171105.7243348926/-171605.34571128373/-174480.48188201062
+[2022-05-01 23:25:41.414] [secedo] [[37mtrace[m] Attempting to cluster into 3 clusters
+[2022-05-01 23:25:41.516] [secedo] [[37mtrace[m] Cluster 1 has 1998 cells
+[2022-05-01 23:25:41.516] [secedo] [[37mtrace[m] Cluster 2 has 1502 cells
+[2022-05-01 23:25:41.516] [secedo] [[37mtrace[m] Cluster 3 has 1750 cells
+[2022-05-01 23:25:41.516] [secedo] [[37mtrace[m] Cluster 4 has 0 cells
+[2022-05-01 23:25:41.579] [secedo] [[32minfo[m] Skipping clustering refinement via expectation maximization...
+[2022-05-01 23:25:41.587] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster B with 5250 elements
-[2022-05-01 14:21:42.263] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:21:43.867] [svc] [[37mtrace[m] Avg coverage for cluster B: 90.47689853879399. Total positions: 97180
-[2022-05-01 14:21:44.019] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster AA with 1998 elements
+[2022-05-01 23:25:41.587] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:25:43.963] [secedo] [[37mtrace[m] Avg coverage for cluster AA: 68.86574148246773. Total positions: 181009
+[2022-05-01 23:25:44.338] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:21:44.157]	  0.0%, 0/97180
-[2022-05-01 14:21:48.603]	 10.0%, 9718/97180
-[2022-05-01 14:21:52.959]	 20.0%, 19436/97180
-[2022-05-01 14:21:57.368]	 30.0%, 29154/97180
-[2022-05-01 14:22:01.881]	 40.0%, 38872/97180
-[2022-05-01 14:22:06.306]	 50.0%, 48590/97180
-[2022-05-01 14:22:10.566]	 60.0%, 58308/97180
-[2022-05-01 14:22:15.095]	 70.0%, 68026/97180
-[2022-05-01 14:22:19.651]	 80.0%, 77744/97180
-[2022-05-01 14:22:23.678]	 90.0%, 87462/97180
-[2022-05-01 14:22:27.721]	100.0%, 97180/97180
+[2022-05-01 23:25:44.416]	  0.0%, 0/181009
+[2022-05-01 23:25:53.466]	 10.0%, 18100/181009
+[2022-05-01 23:26:04.090]	 20.0%, 36200/181009
+[2022-05-01 23:26:13.323]	 30.0%, 54300/181009
+[2022-05-01 23:26:22.255]	 40.0%, 72400/181009
+[2022-05-01 23:26:31.180]	 50.0%, 90500/181009
+[2022-05-01 23:26:40.287]	 60.0%, 108600/181009
+[2022-05-01 23:26:49.208]	 70.0%, 126700/181009
+[2022-05-01 23:26:58.276]	 80.0%, 144800/181009
+[2022-05-01 23:27:07.422]	 90.0%, 162900/181009
+[2022-05-01 23:27:16.081]	100.0%, 181000/181009
+[2022-05-01 23:27:16.082]	100.0%, 181009/181009
 
-[2022-05-01 14:22:27.765] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:22:27.837] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:23:00.978] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 14.321094932085318/16.1388816735437/16.75877874845069/16.760014427441003	aic 1/2/3/4 -150331.49678689585/-169376.25757220885/-175843.17685873224/-175814.15148813053	bic 1/2/3/4 -150200.17711978414/-169107.05225462985/-175436.08589068594/-175269.17486961692
-[2022-05-01 14:23:00.978] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:23:01.046] [svc] [[37mtrace[m] Cluster 1 has 1750 cells
-[2022-05-01 14:23:01.046] [svc] [[37mtrace[m] Cluster 2 has 3500 cells
-[2022-05-01 14:23:01.046] [svc] [[37mtrace[m] Cluster 3 has 0 cells
-[2022-05-01 14:23:01.046] [svc] [[37mtrace[m] Cluster 4 has 0 cells
-[2022-05-01 14:23:01.098] [svc] [[32minfo[m] Skipping clustering refinement via expectation maximization...
-[2022-05-01 14:23:01.102] [svc] [[32minfo[m] 
+[2022-05-01 23:27:16.120] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:27:16.142] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:27:18.142] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 11.905073286128353/12.201683189003004/12.197748883103841/12.20148813374047	aic 1/2/3/4 -47532.6728513689/-48675.926023256005/-48618.20453688295/-48591.14658242692	bic 1/2/3/4 -47420.674812184734/-48446.33004292846/-48271.01061541202/-48126.35471981261
+[2022-05-01 23:27:18.142] [secedo] [[37mtrace[m] Attempting to cluster into 2 clusters
+[2022-05-01 23:27:18.164] [secedo] [[37mtrace[m] Cluster 1 has 1002 cells
+[2022-05-01 23:27:18.165] [secedo] [[37mtrace[m] Cluster 2 has 996 cells
+[2022-05-01 23:27:18.165] [secedo] [[37mtrace[m] Cluster 3 has 0 cells
+[2022-05-01 23:27:18.165] [secedo] [[37mtrace[m] Cluster 4 has 0 cells
+[2022-05-01 23:27:18.173] [secedo] [[32minfo[m] Skipping clustering refinement via expectation maximization...
+[2022-05-01 23:27:18.177] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster BA with 1750 elements
-[2022-05-01 14:23:01.102] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:23:02.422] [svc] [[37mtrace[m] Avg coverage for cluster BA: 64.7101861482885. Total positions: 231697
-[2022-05-01 14:23:02.727] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster AAA with 1002 elements
+[2022-05-01 23:27:18.177] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:27:20.389] [secedo] [[37mtrace[m] Avg coverage for cluster AAA: 39.90174371760812. Total positions: 367376
+[2022-05-01 23:27:21.219] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:23:02.766]	  0.0%, 0/231697
-[2022-05-01 14:23:06.489]	 10.0%, 23169/231697
-[2022-05-01 14:23:10.377]	 20.0%, 46338/231697
-[2022-05-01 14:23:14.253]	 30.0%, 69507/231697
-[2022-05-01 14:23:18.166]	 40.0%, 92676/231697
-[2022-05-01 14:23:21.914]	 50.0%, 115845/231697
-[2022-05-01 14:23:25.891]	 60.0%, 139014/231697
-[2022-05-01 14:23:29.770]	 70.0%, 162183/231697
-[2022-05-01 14:23:33.726]	 80.0%, 185352/231697
-[2022-05-01 14:23:37.495]	 90.0%, 208521/231697
-[2022-05-01 14:23:41.203]	100.0%, 231690/231697
-[2022-05-01 14:23:41.204]	100.0%, 231697/231697
+[2022-05-01 23:27:21.271]	  0.0%, 0/367376
+[2022-05-01 23:27:24.992]	 10.0%, 36737/367376
+[2022-05-01 23:27:28.711]	 20.0%, 73474/367376
+[2022-05-01 23:27:32.360]	 30.0%, 110211/367376
+[2022-05-01 23:27:36.083]	 40.0%, 146948/367376
+[2022-05-01 23:27:39.729]	 50.0%, 183685/367376
+[2022-05-01 23:27:43.453]	 60.0%, 220422/367376
+[2022-05-01 23:27:47.065]	 70.0%, 257159/367376
+[2022-05-01 23:27:50.781]	 80.0%, 293896/367376
+[2022-05-01 23:27:54.419]	 90.0%, 330633/367376
+[2022-05-01 23:27:58.021]	100.0%, 367370/367376
+[2022-05-01 23:27:58.021]	100.0%, 367376/367376
 
-[2022-05-01 14:23:41.222] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:23:41.233] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:23:42.369] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 11.573910921494681/11.609037686571295/13.175814235417143/13.147587770247053	aic 1/2/3/4 -40468.68822523138/-40549.63190299953/-45991.34982396/-45850.55719586468	bic 1/2/3/4 -40359.34080389303/-40325.46968925591/-45652.37281781111/-45396.765397310526
-[2022-05-01 14:23:42.369] [svc] [[37mtrace[m] Attempting to cluster into 3 clusters
-[2022-05-01 14:23:42.398] [svc] [[37mtrace[m] Cluster 1 has 500 cells
-[2022-05-01 14:23:42.398] [svc] [[37mtrace[m] Cluster 2 has 750 cells
-[2022-05-01 14:23:42.398] [svc] [[37mtrace[m] Cluster 3 has 500 cells
-[2022-05-01 14:23:42.398] [svc] [[37mtrace[m] Cluster 4 has 0 cells
-[2022-05-01 14:23:42.400] [svc] [[32minfo[m] Skipping clustering refinement via expectation maximization...
-[2022-05-01 14:23:42.403] [svc] [[32minfo[m] 
+[2022-05-01 23:27:58.049] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:27:58.057] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:27:58.366] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 10.179690755354427/10.18515388437676/10.193280846107388/10.215334339360446	aic 1/2/3/4 -20360.100273730273/-20329.048384291025/-20303.334815599206/-20305.530016078334	bic 1/2/3/4 -20261.905208097378/-20127.74849974359/-19998.930112137226/-19898.020493701813
+[2022-05-01 23:27:58.366] [secedo] [[37mtrace[m] Attempting to cluster into 2 clusters
+[2022-05-01 23:27:58.389] [secedo] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
+[2022-05-01 23:27:58.463] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster BAA with 500 elements
-[2022-05-01 14:23:42.403] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:23:43.420] [svc] [[37mtrace[m] Avg coverage for cluster BAA: 21.110455622005688. Total positions: 554802
-[2022-05-01 14:23:44.037] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster AAB with 996 elements
+[2022-05-01 23:27:58.463] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:28:00.495] [secedo] [[37mtrace[m] Avg coverage for cluster AAB: 39.77730331509618. Total positions: 367199
+[2022-05-01 23:28:01.223] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:23:44.061]	  0.0%, 0/554802
-[2022-05-01 14:23:45.260]	 10.0%, 55480/554802
-[2022-05-01 14:23:46.438]	 20.0%, 110960/554802
-[2022-05-01 14:23:47.616]	 30.0%, 166440/554802
-[2022-05-01 14:23:48.865]	 40.0%, 221920/554802
-[2022-05-01 14:23:50.112]	 50.0%, 277400/554802
-[2022-05-01 14:23:51.398]	 60.0%, 332880/554802
-[2022-05-01 14:23:52.612]	 70.0%, 388360/554802
-[2022-05-01 14:23:53.845]	 80.0%, 443840/554802
-[2022-05-01 14:23:55.083]	 90.0%, 499320/554802
-[2022-05-01 14:23:56.313]	100.0%, 554800/554802
-[2022-05-01 14:23:56.313]	100.0%, 554802/554802
+[2022-05-01 23:28:01.279]	  0.0%, 0/367199
+[2022-05-01 23:28:04.899]	 10.0%, 36719/367199
+[2022-05-01 23:28:08.506]	 20.0%, 73438/367199
+[2022-05-01 23:28:12.109]	 30.0%, 110157/367199
+[2022-05-01 23:28:15.756]	 40.0%, 146876/367199
+[2022-05-01 23:28:19.360]	 50.0%, 183595/367199
+[2022-05-01 23:28:23.002]	 60.0%, 220314/367199
+[2022-05-01 23:28:26.590]	 70.0%, 257033/367199
+[2022-05-01 23:28:30.214]	 80.0%, 293752/367199
+[2022-05-01 23:28:33.853]	 90.0%, 330471/367199
+[2022-05-01 23:28:37.401]	100.0%, 367190/367199
+[2022-05-01 23:28:37.402]	100.0%, 367199/367199
 
-[2022-05-01 14:23:56.330] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:23:56.334] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:23:56.387] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 8.441828474485298/8.450314684116263/8.488562520803312/8.521201290872394	aic 1/2/3/4 -8401.828474485299/-8368.314684116263/-8364.56252080331/-8355.201290872394	bic 1/2/3/4 -8317.536312516855/-8195.515752080953/-8103.256818701135/-8005.388818703352
-[2022-05-01 14:23:56.387] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:23:56.394] [svc] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
-[2022-05-01 14:23:56.436] [svc] [[32minfo[m] 
+[2022-05-01 23:28:37.432] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:28:37.441] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:28:37.745] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 10.164676070373542/10.168737533000614/10.17996798796781/10.19125624886122	aic 1/2/3/4 -20208.034732184096/-20174.125165737223/-20154.496232031877/-20134.982447731552	bic 1/2/3/4 -20109.959787032403/-19973.071528176253/-19850.46390206163/-19727.971425352032
+[2022-05-01 23:28:37.745] [secedo] [[37mtrace[m] Attempting to cluster into 2 clusters
+[2022-05-01 23:28:37.763] [secedo] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
+[2022-05-01 23:28:37.869] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster BAB with 750 elements
-[2022-05-01 14:23:56.436] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:23:57.450] [svc] [[37mtrace[m] Avg coverage for cluster BAB: 30.430321921042484. Total positions: 461666
-[2022-05-01 14:23:57.987] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster AB with 1502 elements
+[2022-05-01 23:28:37.869] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:28:39.890] [secedo] [[37mtrace[m] Avg coverage for cluster AB: 57.33750231505105. Total positions: 264573
+[2022-05-01 23:28:40.521] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:23:58.016]	  0.0%, 0/461666
-[2022-05-01 14:23:59.737]	 10.0%, 46166/461666
-[2022-05-01 14:24:01.544]	 20.0%, 92332/461666
-[2022-05-01 14:24:03.312]	 30.0%, 138498/461666
-[2022-05-01 14:24:05.087]	 40.0%, 184664/461666
-[2022-05-01 14:24:06.810]	 50.0%, 230830/461666
-[2022-05-01 14:24:08.484]	 60.0%, 276996/461666
-[2022-05-01 14:24:10.170]	 70.0%, 323162/461666
-[2022-05-01 14:24:11.916]	 80.0%, 369328/461666
-[2022-05-01 14:24:13.685]	 90.0%, 415494/461666
-[2022-05-01 14:24:15.412]	100.0%, 461660/461666
-[2022-05-01 14:24:15.412]	100.0%, 461666/461666
+[2022-05-01 23:28:40.600]	  0.0%, 0/264573
+[2022-05-01 23:28:47.684]	 10.0%, 26457/264573
+[2022-05-01 23:28:54.748]	 20.0%, 52914/264573
+[2022-05-01 23:29:01.780]	 30.0%, 79371/264573
+[2022-05-01 23:29:08.865]	 40.0%, 105828/264573
+[2022-05-01 23:29:15.921]	 50.0%, 132285/264573
+[2022-05-01 23:29:23.132]	 60.0%, 158742/264573
+[2022-05-01 23:29:30.152]	 70.0%, 185199/264573
+[2022-05-01 23:29:37.283]	 80.0%, 211656/264573
+[2022-05-01 23:29:44.399]	 90.0%, 238113/264573
+[2022-05-01 23:29:51.138]	100.0%, 264570/264573
+[2022-05-01 23:29:51.139]	100.0%, 264573/264573
 
-[2022-05-01 14:24:15.429] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:24:15.434] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:24:15.556] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 9.455490545486908/9.458016156297026/9.478301498017355/9.487245789921467	aic 1/2/3/4 -14143.235818230363/-14105.024234445538/-14093.452247026033/-14064.8686848822	bic 1/2/3/4 -14050.834354099756/-13915.601232977793/-13807.00770822115/-13681.40260874018
-[2022-05-01 14:24:15.556] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:24:15.570] [svc] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
-[2022-05-01 14:24:15.620] [svc] [[32minfo[m] 
+[2022-05-01 23:29:51.169] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:29:51.180] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:29:52.048] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 11.191829129775574/11.748468483246514/12.888879044388762/12.863086357063379	aic 1/2/3/4 -33580.25470584582/-35210.39932367253/-38594.192649343844/-38474.71141661839	bic 1/2/3/4 -33473.963649199344/-34992.502657547244/-38264.69037373975/-38033.60353153549
+[2022-05-01 23:29:52.048] [secedo] [[37mtrace[m] Attempting to cluster into 3 clusters
+[2022-05-01 23:29:52.071] [secedo] [[37mtrace[m] Cluster 1 has 500 cells
+[2022-05-01 23:29:52.071] [secedo] [[37mtrace[m] Cluster 2 has 504 cells
+[2022-05-01 23:29:52.071] [secedo] [[37mtrace[m] Cluster 3 has 498 cells
+[2022-05-01 23:29:52.071] [secedo] [[37mtrace[m] Cluster 4 has 0 cells
+[2022-05-01 23:29:52.075] [secedo] [[32minfo[m] Skipping clustering refinement via expectation maximization...
+[2022-05-01 23:29:52.079] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster BAC with 500 elements
-[2022-05-01 14:24:15.620] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:24:16.606] [svc] [[37mtrace[m] Avg coverage for cluster BAC: 21.12239813030052. Total positions: 556667
-[2022-05-01 14:24:17.240] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster ABA with 500 elements
+[2022-05-01 23:29:52.079] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:29:53.859] [secedo] [[37mtrace[m] Avg coverage for cluster ABA: 21.123015484080213. Total positions: 561157
+[2022-05-01 23:29:54.963] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:24:17.273]	  0.0%, 0/556667
-[2022-05-01 14:24:18.441]	 10.0%, 55666/556667
-[2022-05-01 14:24:19.657]	 20.0%, 111332/556667
-[2022-05-01 14:24:20.871]	 30.0%, 166998/556667
-[2022-05-01 14:24:22.076]	 40.0%, 222664/556667
-[2022-05-01 14:24:23.292]	 50.0%, 278330/556667
-[2022-05-01 14:24:24.481]	 60.0%, 333996/556667
-[2022-05-01 14:24:25.676]	 70.0%, 389662/556667
-[2022-05-01 14:24:26.878]	 80.0%, 445328/556667
-[2022-05-01 14:24:28.086]	 90.0%, 500994/556667
-[2022-05-01 14:24:29.219]	100.0%, 556660/556667
-[2022-05-01 14:24:29.219]	100.0%, 556667/556667
+[2022-05-01 23:29:55.012]	  0.0%, 0/561157
+[2022-05-01 23:29:57.133]	 10.0%, 56115/561157
+[2022-05-01 23:29:59.157]	 20.0%, 112230/561157
+[2022-05-01 23:30:01.172]	 30.0%, 168345/561157
+[2022-05-01 23:30:03.196]	 40.0%, 224460/561157
+[2022-05-01 23:30:05.214]	 50.0%, 280575/561157
+[2022-05-01 23:30:07.249]	 60.0%, 336690/561157
+[2022-05-01 23:30:09.280]	 70.0%, 392805/561157
+[2022-05-01 23:30:11.300]	 80.0%, 448920/561157
+[2022-05-01 23:30:13.321]	 90.0%, 505035/561157
+[2022-05-01 23:30:15.313]	100.0%, 561150/561157
+[2022-05-01 23:30:15.313]	100.0%, 561157/561157
 
-[2022-05-01 14:24:29.227] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:24:29.234] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:24:29.298] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 8.441828737359652/8.458258176928073/8.482670711647096/8.514122093605032	aic 1/2/3/4 -8401.828737359652/-8376.258176928073/-8358.670711647095/-8348.122093605032	bic 1/2/3/4 -8317.536575391208/-8203.459244892763/-8097.365009544919/-7998.30962143599
-[2022-05-01 14:24:29.298] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:24:29.306] [svc] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
-[2022-05-01 14:24:29.392] [svc] [[32minfo[m] 
+[2022-05-01 23:30:15.345] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:30:15.354] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:30:15.425] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 8.441827902594957/8.453168773260975/8.487654403462543/8.506271580238149	aic 1/2/3/4 -8401.827902594958/-8371.168773260975/-8363.654403462542/-8340.27158023815	bic 1/2/3/4 -8317.535740626514/-8198.369841225665/-8102.348701360366/-7990.459108069108
+[2022-05-01 23:30:15.425] [secedo] [[37mtrace[m] Attempting to cluster into 2 clusters
+[2022-05-01 23:30:15.435] [secedo] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
+[2022-05-01 23:30:15.506] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster BB with 3500 elements
-[2022-05-01 14:24:29.392] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:24:30.844] [svc] [[37mtrace[m] Avg coverage for cluster BB: 80.7273196101569. Total positions: 114405
-[2022-05-01 14:24:30.999] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster ABB with 504 elements
+[2022-05-01 23:30:15.506] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:30:17.149] [secedo] [[37mtrace[m] Avg coverage for cluster ABB: 21.248307345004676. Total positions: 559033
+[2022-05-01 23:30:18.122] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:24:31.082]	  0.0%, 0/114405
-[2022-05-01 14:24:34.602]	 10.0%, 11440/114405
-[2022-05-01 14:24:37.913]	 20.0%, 22880/114405
-[2022-05-01 14:24:41.371]	 30.0%, 34320/114405
-[2022-05-01 14:24:44.694]	 40.0%, 45760/114405
-[2022-05-01 14:24:48.038]	 50.0%, 57200/114405
-[2022-05-01 14:24:51.351]	 60.0%, 68640/114405
-[2022-05-01 14:24:54.817]	 70.0%, 80080/114405
-[2022-05-01 14:24:58.246]	 80.0%, 91520/114405
-[2022-05-01 14:25:01.541]	 90.0%, 102960/114405
-[2022-05-01 14:25:04.250]	100.0%, 114400/114405
-[2022-05-01 14:25:04.251]	100.0%, 114405/114405
+[2022-05-01 23:30:18.167]	  0.0%, 0/559033
+[2022-05-01 23:30:20.256]	 10.0%, 55903/559033
+[2022-05-01 23:30:22.328]	 20.0%, 111806/559033
+[2022-05-01 23:30:24.398]	 30.0%, 167709/559033
+[2022-05-01 23:30:26.438]	 40.0%, 223612/559033
+[2022-05-01 23:30:28.509]	 50.0%, 279515/559033
+[2022-05-01 23:30:30.543]	 60.0%, 335418/559033
+[2022-05-01 23:30:32.567]	 70.0%, 391321/559033
+[2022-05-01 23:30:34.615]	 80.0%, 447224/559033
+[2022-05-01 23:30:36.744]	 90.0%, 503127/559033
+[2022-05-01 23:30:38.769]	100.0%, 559030/559033
+[2022-05-01 23:30:38.769]	100.0%, 559033/559033
 
-[2022-05-01 14:25:04.282] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:25:04.321] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:25:13.757] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 13.306707731067219/13.312531542819485/14.42851609821689/14.42969929478897	aic 1/2/3/4 -93106.95411747054/-93105.7207997364/-100875.61268751824/-100841.89506352278	bic 1/2/3/4 -92983.74375252098/-92853.13955158982/-100493.66055617464/-100330.57204898215
-[2022-05-01 14:25:13.757] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:25:13.787] [svc] [[37mtrace[m] Cluster 1 has 1500 cells
-[2022-05-01 14:25:13.787] [svc] [[37mtrace[m] Cluster 2 has 2000 cells
-[2022-05-01 14:25:13.787] [svc] [[37mtrace[m] Cluster 3 has 0 cells
-[2022-05-01 14:25:13.787] [svc] [[37mtrace[m] Cluster 4 has 0 cells
-[2022-05-01 14:25:13.806] [svc] [[32minfo[m] Skipping clustering refinement via expectation maximization...
-[2022-05-01 14:25:13.808] [svc] [[32minfo[m] 
+[2022-05-01 23:30:38.799] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:30:38.805] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:30:38.872] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 8.461748631743761/8.47485561587769/8.500371901550956/8.52116953566986	aic 1/2/3/4 -8489.442620797712/-8460.654460804712/-8444.374876763364/-8423.338891955218	bic 1/2/3/4 -8404.991095436284/-8287.528833813785/-8182.57514814294/-8072.8650617052945
+[2022-05-01 23:30:38.872] [secedo] [[37mtrace[m] Attempting to cluster into 2 clusters
+[2022-05-01 23:30:38.881] [secedo] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
+[2022-05-01 23:30:38.953] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster BBA with 1500 elements
-[2022-05-01 14:25:13.808] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:25:15.057] [svc] [[37mtrace[m] Avg coverage for cluster BBA: 57.48403006281783. Total positions: 267440
-[2022-05-01 14:25:15.438] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster ABC with 498 elements
+[2022-05-01 23:30:38.953] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:30:40.674] [secedo] [[37mtrace[m] Avg coverage for cluster ABC: 21.04354748995502. Total positions: 562719
+[2022-05-01 23:30:41.703] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:25:15.471]	  0.0%, 0/267440
-[2022-05-01 14:25:19.055]	 10.0%, 26744/267440
-[2022-05-01 14:25:22.491]	 20.0%, 53488/267440
-[2022-05-01 14:25:25.825]	 30.0%, 80232/267440
-[2022-05-01 14:25:28.923]	 40.0%, 106976/267440
-[2022-05-01 14:25:32.343]	 50.0%, 133720/267440
-[2022-05-01 14:25:35.809]	 60.0%, 160464/267440
-[2022-05-01 14:25:39.208]	 70.0%, 187208/267440
-[2022-05-01 14:25:42.632]	 80.0%, 213952/267440
-[2022-05-01 14:25:45.991]	 90.0%, 240696/267440
-[2022-05-01 14:25:49.238]	100.0%, 267440/267440
+[2022-05-01 23:30:41.751]	  0.0%, 0/562719
+[2022-05-01 23:30:43.775]	 10.0%, 56271/562719
+[2022-05-01 23:30:45.755]	 20.0%, 112542/562719
+[2022-05-01 23:30:47.776]	 30.0%, 168813/562719
+[2022-05-01 23:30:49.764]	 40.0%, 225084/562719
+[2022-05-01 23:30:51.725]	 50.0%, 281355/562719
+[2022-05-01 23:30:53.703]	 60.0%, 337626/562719
+[2022-05-01 23:30:55.721]	 70.0%, 393897/562719
+[2022-05-01 23:30:57.737]	 80.0%, 450168/562719
+[2022-05-01 23:30:59.729]	 90.0%, 506439/562719
+[2022-05-01 23:31:01.722]	100.0%, 562710/562719
+[2022-05-01 23:31:01.722]	100.0%, 562719/562719
 
-[2022-05-01 14:25:49.257] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:25:49.265] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:25:49.965] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 11.188496335496552/12.21952066714129/12.894123187507512/12.90228104382948	aic 1/2/3/4 -33525.48900648965/-36576.562001423874/-38558.36956252254/-38540.843131488444	bic 1/2/3/4 -33419.224598747845/-36358.71996555317/-38228.94989852294/-38099.84583935995
-[2022-05-01 14:25:49.965] [svc] [[37mtrace[m] Attempting to cluster into 3 clusters
-[2022-05-01 14:25:49.984] [svc] [[37mtrace[m] Cluster 1 has 500 cells
-[2022-05-01 14:25:49.984] [svc] [[37mtrace[m] Cluster 2 has 500 cells
-[2022-05-01 14:25:49.984] [svc] [[37mtrace[m] Cluster 3 has 500 cells
-[2022-05-01 14:25:49.984] [svc] [[37mtrace[m] Cluster 4 has 0 cells
-[2022-05-01 14:25:49.985] [svc] [[32minfo[m] Skipping clustering refinement via expectation maximization...
-[2022-05-01 14:25:49.988] [svc] [[32minfo[m] 
+[2022-05-01 23:31:01.749] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:31:01.756] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:31:01.823] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 8.4318082781879/8.455356389746278/8.476852233425937/8.479765596360433	aic 1/2/3/4 -8358.081045075149/-8339.534964187293/-8318.944824492233/-8279.846533974991	bic 1/2/3/4 -8273.869043534656/-8166.900361029282/-8057.887619716705/-7930.366727581944
+[2022-05-01 23:31:01.823] [secedo] [[37mtrace[m] Attempting to cluster into 2 clusters
+[2022-05-01 23:31:01.833] [secedo] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
+[2022-05-01 23:31:01.963] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster BBAA with 500 elements
-[2022-05-01 14:25:49.988] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:25:50.982] [svc] [[37mtrace[m] Avg coverage for cluster BBAA: 21.123015484080213. Total positions: 561157
-[2022-05-01 14:25:51.607] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster AC with 1750 elements
+[2022-05-01 23:31:01.963] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:31:04.362] [secedo] [[37mtrace[m] Avg coverage for cluster AC: 63.872993989361945. Total positions: 219777
+[2022-05-01 23:31:04.768] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:25:51.631]	  0.0%, 0/561157
-[2022-05-01 14:25:52.918]	 10.0%, 56115/561157
-[2022-05-01 14:25:54.161]	 20.0%, 112230/561157
-[2022-05-01 14:25:55.416]	 30.0%, 168345/561157
-[2022-05-01 14:25:56.640]	 40.0%, 224460/561157
-[2022-05-01 14:25:57.873]	 50.0%, 280575/561157
-[2022-05-01 14:25:59.127]	 60.0%, 336690/561157
-[2022-05-01 14:26:00.321]	 70.0%, 392805/561157
-[2022-05-01 14:26:01.521]	 80.0%, 448920/561157
-[2022-05-01 14:26:02.820]	 90.0%, 505035/561157
-[2022-05-01 14:26:04.016]	100.0%, 561150/561157
-[2022-05-01 14:26:04.016]	100.0%, 561157/561157
+[2022-05-01 23:31:04.838]	  0.0%, 0/219777
+[2022-05-01 23:31:13.243]	 10.0%, 21977/219777
+[2022-05-01 23:31:21.712]	 20.0%, 43954/219777
+[2022-05-01 23:31:30.001]	 30.0%, 65931/219777
+[2022-05-01 23:31:38.309]	 40.0%, 87908/219777
+[2022-05-01 23:31:46.609]	 50.0%, 109885/219777
+[2022-05-01 23:31:55.253]	 60.0%, 131862/219777
+[2022-05-01 23:32:03.541]	 70.0%, 153839/219777
+[2022-05-01 23:32:11.967]	 80.0%, 175816/219777
+[2022-05-01 23:32:20.291]	 90.0%, 197793/219777
+[2022-05-01 23:32:28.152]	100.0%, 219770/219777
+[2022-05-01 23:32:28.152]	100.0%, 219777/219777
 
-[2022-05-01 14:26:04.022] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:26:04.026] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:26:04.082] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 8.441827902594957/8.453405768192306/8.470815007608142/8.50644526546025	aic 1/2/3/4 -8401.827902594958/-8371.405768192306/-8346.815007608142/-8340.44526546025	bic 1/2/3/4 -8317.535740626514/-8198.606836156996/-8085.509305505966/-7990.632793291208
-[2022-05-01 14:26:04.082] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:26:04.090] [svc] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
-[2022-05-01 14:26:04.130] [svc] [[32minfo[m] 
+[2022-05-01 23:32:28.183] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:32:28.198] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:32:29.554] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 11.573850071172677/12.140968598545502/13.08540167199255/13.091711709016213	aic 1/2/3/4 -40468.47524910437/-42411.39009490926/-45674.90585197393/-45654.990981556744	bic 1/2/3/4 -40359.12782776602/-42187.227881165636/-45335.92884582504/-45201.19918300259
+[2022-05-01 23:32:29.554] [secedo] [[37mtrace[m] Attempting to cluster into 3 clusters
+[2022-05-01 23:32:29.582] [secedo] [[37mtrace[m] Cluster 1 has 500 cells
+[2022-05-01 23:32:29.582] [secedo] [[37mtrace[m] Cluster 2 has 746 cells
+[2022-05-01 23:32:29.582] [secedo] [[37mtrace[m] Cluster 3 has 504 cells
+[2022-05-01 23:32:29.582] [secedo] [[37mtrace[m] Cluster 4 has 0 cells
+[2022-05-01 23:32:29.586] [secedo] [[32minfo[m] Skipping clustering refinement via expectation maximization...
+[2022-05-01 23:32:29.589] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster BBAB with 500 elements
-[2022-05-01 14:26:04.130] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:26:05.052] [svc] [[37mtrace[m] Avg coverage for cluster BBAB: 21.11214247900302. Total positions: 559128
-[2022-05-01 14:26:05.685] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster ACA with 500 elements
+[2022-05-01 23:32:29.589] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:32:31.189] [secedo] [[37mtrace[m] Avg coverage for cluster ACA: 21.12239813030052. Total positions: 556667
+[2022-05-01 23:32:32.075] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:26:05.709]	  0.0%, 0/559128
-[2022-05-01 14:26:06.949]	 10.0%, 55912/559128
-[2022-05-01 14:26:08.205]	 20.0%, 111824/559128
-[2022-05-01 14:26:09.382]	 30.0%, 167736/559128
-[2022-05-01 14:26:10.517]	 40.0%, 223648/559128
-[2022-05-01 14:26:11.823]	 50.0%, 279560/559128
-[2022-05-01 14:26:13.018]	 60.0%, 335472/559128
-[2022-05-01 14:26:14.182]	 70.0%, 391384/559128
-[2022-05-01 14:26:15.367]	 80.0%, 447296/559128
-[2022-05-01 14:26:16.555]	 90.0%, 503208/559128
-[2022-05-01 14:26:17.809]	100.0%, 559120/559128
-[2022-05-01 14:26:17.809]	100.0%, 559128/559128
+[2022-05-01 23:32:32.123]	  0.0%, 0/556667
+[2022-05-01 23:32:34.171]	 10.0%, 55666/556667
+[2022-05-01 23:32:36.180]	 20.0%, 111332/556667
+[2022-05-01 23:32:38.139]	 30.0%, 166998/556667
+[2022-05-01 23:32:40.119]	 40.0%, 222664/556667
+[2022-05-01 23:32:42.095]	 50.0%, 278330/556667
+[2022-05-01 23:32:44.072]	 60.0%, 333996/556667
+[2022-05-01 23:32:46.136]	 70.0%, 389662/556667
+[2022-05-01 23:32:48.106]	 80.0%, 445328/556667
+[2022-05-01 23:32:50.090]	 90.0%, 500994/556667
+[2022-05-01 23:32:52.051]	100.0%, 556660/556667
+[2022-05-01 23:32:52.051]	100.0%, 556667/556667
 
-[2022-05-01 14:26:17.816] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:26:17.820] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:26:17.870] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 8.441828244098955/8.462753317259967/8.476829760509496/8.507407590322988	aic 1/2/3/4 -8401.828244098955/-8380.753317259967/-8352.829760509496/-8341.407590322988	bic 1/2/3/4 -8317.536082130511/-8207.954385224657/-8091.52405840732/-7991.595118153946
-[2022-05-01 14:26:17.870] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:26:17.894] [svc] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
-[2022-05-01 14:26:17.935] [svc] [[32minfo[m] 
+[2022-05-01 23:32:52.078] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:32:52.087] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:32:52.150] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 8.441828737359652/8.461742866036332/8.471128554788873/8.484334624727648	aic 1/2/3/4 -8401.828737359652/-8379.742866036331/-8347.128554788873/-8318.334624727648	bic 1/2/3/4 -8317.536575391208/-8206.943934001021/-8085.822852686697/-7968.522152558606
+[2022-05-01 23:32:52.150] [secedo] [[37mtrace[m] Attempting to cluster into 2 clusters
+[2022-05-01 23:32:52.159] [secedo] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
+[2022-05-01 23:32:52.234] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster BBAC with 500 elements
-[2022-05-01 14:26:17.935] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:26:18.877] [svc] [[37mtrace[m] Avg coverage for cluster BBAC: 21.110815335022693. Total positions: 562738
-[2022-05-01 14:26:19.531] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster ACB with 746 elements
+[2022-05-01 23:32:52.234] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:32:54.177] [secedo] [[37mtrace[m] Avg coverage for cluster ACB: 30.278323087645404. Total positions: 463447
+[2022-05-01 23:32:54.959] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:26:19.564]	  0.0%, 0/562738
-[2022-05-01 14:26:20.669]	 10.0%, 56273/562738
-[2022-05-01 14:26:21.821]	 20.0%, 112546/562738
-[2022-05-01 14:26:22.988]	 30.0%, 168819/562738
-[2022-05-01 14:26:24.141]	 40.0%, 225092/562738
-[2022-05-01 14:26:25.304]	 50.0%, 281365/562738
-[2022-05-01 14:26:26.485]	 60.0%, 337638/562738
-[2022-05-01 14:26:27.691]	 70.0%, 393911/562738
-[2022-05-01 14:26:28.909]	 80.0%, 450184/562738
-[2022-05-01 14:26:30.110]	 90.0%, 506457/562738
-[2022-05-01 14:26:31.322]	100.0%, 562730/562738
-[2022-05-01 14:26:31.322]	100.0%, 562738/562738
+[2022-05-01 23:32:55.008]	  0.0%, 0/463447
+[2022-05-01 23:32:57.858]	 10.0%, 46344/463447
+[2022-05-01 23:33:00.750]	 20.0%, 92688/463447
+[2022-05-01 23:33:03.586]	 30.0%, 139032/463447
+[2022-05-01 23:33:06.468]	 40.0%, 185376/463447
+[2022-05-01 23:33:09.264]	 50.0%, 231720/463447
+[2022-05-01 23:33:12.101]	 60.0%, 278064/463447
+[2022-05-01 23:33:14.917]	 70.0%, 324408/463447
+[2022-05-01 23:33:17.841]	 80.0%, 370752/463447
+[2022-05-01 23:33:20.740]	 90.0%, 417096/463447
+[2022-05-01 23:33:23.546]	100.0%, 463440/463447
+[2022-05-01 23:33:23.546]	100.0%, 463447/463447
 
-[2022-05-01 14:26:31.329] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:26:31.336] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:26:31.385] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 8.441828009657588/8.466868861802833/8.494336181975713/8.503431179200069	aic 1/2/3/4 -8401.828009657587/-8384.868861802834/-8370.336181975714/-8337.431179200068	bic 1/2/3/4 -8317.535847689143/-8212.069929767524/-8109.030479873538/-7987.618707031026
-[2022-05-01 14:26:31.385] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:26:31.396] [svc] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
-[2022-05-01 14:26:31.482] [svc] [[32minfo[m] 
+[2022-05-01 23:33:23.574] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:33:23.581] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:33:23.730] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 9.442121500965401/9.449830169149688/9.463811717210568/9.4754316304108	aic 1/2/3/4 -14047.645279440378/-14017.146612371334/-13996.007082078168/-13971.343992572913	bic 1/2/3/4 -13955.350767436303/-13827.94286276298/-13709.894094865534/-13588.321767756
+[2022-05-01 23:33:23.730] [secedo] [[37mtrace[m] Attempting to cluster into 2 clusters
+[2022-05-01 23:33:23.744] [secedo] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
+[2022-05-01 23:33:23.808] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster BBB with 2000 elements
-[2022-05-01 14:26:31.482] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:26:32.792] [svc] [[37mtrace[m] Avg coverage for cluster BBB: 69.81898012474184. Total positions: 194161
-[2022-05-01 14:26:33.060] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster ACC with 504 elements
+[2022-05-01 23:33:23.808] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:33:25.409] [secedo] [[37mtrace[m] Avg coverage for cluster ACC: 21.24595387024633. Total positions: 554913
+[2022-05-01 23:33:26.399] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:26:33.109]	  0.0%, 0/194161
-[2022-05-01 14:26:36.792]	 10.0%, 19416/194161
-[2022-05-01 14:26:40.586]	 20.0%, 38832/194161
-[2022-05-01 14:26:44.329]	 30.0%, 58248/194161
-[2022-05-01 14:26:48.100]	 40.0%, 77664/194161
-[2022-05-01 14:26:51.959]	 50.0%, 97080/194161
-[2022-05-01 14:26:55.877]	 60.0%, 116496/194161
-[2022-05-01 14:26:59.715]	 70.0%, 135912/194161
-[2022-05-01 14:27:03.475]	 80.0%, 155328/194161
-[2022-05-01 14:27:07.065]	 90.0%, 174744/194161
-[2022-05-01 14:27:10.569]	100.0%, 194160/194161
-[2022-05-01 14:27:10.569]	100.0%, 194161/194161
+[2022-05-01 23:33:26.446]	  0.0%, 0/554913
+[2022-05-01 23:33:28.439]	 10.0%, 55491/554913
+[2022-05-01 23:33:30.420]	 20.0%, 110982/554913
+[2022-05-01 23:33:32.392]	 30.0%, 166473/554913
+[2022-05-01 23:33:34.338]	 40.0%, 221964/554913
+[2022-05-01 23:33:36.292]	 50.0%, 277455/554913
+[2022-05-01 23:33:38.228]	 60.0%, 332946/554913
+[2022-05-01 23:33:40.167]	 70.0%, 388437/554913
+[2022-05-01 23:33:42.133]	 80.0%, 443928/554913
+[2022-05-01 23:33:44.137]	 90.0%, 499419/554913
+[2022-05-01 23:33:46.119]	100.0%, 554910/554913
+[2022-05-01 23:33:46.119]	100.0%, 554913/554913
 
-[2022-05-01 14:27:10.589] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:27:10.602] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:27:12.309] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 11.90757579921225/11.9131573622335/11.91411108135856/12.211278925664924	aic 1/2/3/4 -47590.303196848996/-47570.629448934/-47532.44432543423/-48679.1157026597	bic 1/2/3/4 -47478.285147658156/-47340.99244809277/-47185.188372942626/-48214.240798517705
-[2022-05-01 14:27:12.309] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:27:12.329] [svc] [[37mtrace[m] Cluster 1 has 1003 cells
-[2022-05-01 14:27:12.329] [svc] [[37mtrace[m] Cluster 2 has 997 cells
-[2022-05-01 14:27:12.329] [svc] [[37mtrace[m] Cluster 3 has 0 cells
-[2022-05-01 14:27:12.329] [svc] [[37mtrace[m] Cluster 4 has 0 cells
-[2022-05-01 14:27:12.335] [svc] [[32minfo[m] Skipping clustering refinement via expectation maximization...
-[2022-05-01 14:27:12.338] [svc] [[32minfo[m] 
+[2022-05-01 23:33:46.145] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:33:46.152] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:33:46.216] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 8.461748719140292/8.470756242351685/8.501642499930242/8.5213561002036	aic 1/2/3/4 -8489.442708893415/-8456.522292290498/-8445.655639929684/-8423.526949005229	bic 1/2/3/4 -8404.991183531987/-8283.396665299571/-8183.85591130926/-8073.053118755305
+[2022-05-01 23:33:46.216] [secedo] [[37mtrace[m] Attempting to cluster into 2 clusters
+[2022-05-01 23:33:46.225] [secedo] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
+[2022-05-01 23:33:46.472] [secedo] [[32minfo[m] 
 
-Performing clustering of sub-cluster BBBA with 1003 elements
-[2022-05-01 14:27:12.338] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:27:13.501] [svc] [[37mtrace[m] Avg coverage for cluster BBBA: 39.93700428877965. Total positions: 366771
-[2022-05-01 14:27:13.988] [svc] [[32minfo[m] Computing similarity matrix...
+Performing clustering of sub-cluster B with 2000 elements
+[2022-05-01 23:33:46.472] [secedo] [[32minfo[m] Filtering significant positions...
+[2022-05-01 23:33:48.453] [secedo] [[37mtrace[m] Avg coverage for cluster B: 68.45018201506808. Total positions: 173612
+[2022-05-01 23:33:48.759] [secedo] [[32minfo[m] Computing similarity matrix...
 Processed:
-[2022-05-01 14:27:14.020]	  0.0%, 0/366771
-[2022-05-01 14:27:16.161]	 10.0%, 36677/366771
-[2022-05-01 14:27:18.295]	 20.0%, 73354/366771
-[2022-05-01 14:27:20.331]	 30.0%, 110031/366771
-[2022-05-01 14:27:22.360]	 40.0%, 146708/366771
-[2022-05-01 14:27:24.457]	 50.0%, 183385/366771
-[2022-05-01 14:27:26.520]	 60.0%, 220062/366771
-[2022-05-01 14:27:28.593]	 70.0%, 256739/366771
-[2022-05-01 14:27:30.729]	 80.0%, 293416/366771
-[2022-05-01 14:27:32.837]	 90.0%, 330093/366771
-[2022-05-01 14:27:35.026]	100.0%, 366770/366771
-[2022-05-01 14:27:35.026]	100.0%, 366771/366771
+[2022-05-01 23:33:48.838]	  0.0%, 0/173612
+[2022-05-01 23:33:57.259]	 10.0%, 17361/173612
+[2022-05-01 23:34:05.651]	 20.0%, 34722/173612
+[2022-05-01 23:34:14.016]	 30.0%, 52083/173612
+[2022-05-01 23:34:22.285]	 40.0%, 69444/173612
+[2022-05-01 23:34:30.611]	 50.0%, 86805/173612
+[2022-05-01 23:34:38.981]	 60.0%, 104166/173612
+[2022-05-01 23:34:47.209]	 70.0%, 121527/173612
+[2022-05-01 23:34:55.615]	 80.0%, 138888/173612
+[2022-05-01 23:35:03.917]	 90.0%, 156249/173612
+[2022-05-01 23:35:11.711]	100.0%, 173610/173612
+[2022-05-01 23:35:11.711]	100.0%, 173612/173612
 
-[2022-05-01 14:27:35.043] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:27:35.049] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:27:35.314] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 10.182184476230479/10.189987091917494/10.205076463695049/10.208088308214654	aic 1/2/3/4 -20385.46205931834/-20359.114106386492/-20347.383386172267/-20311.425146278594	bic 1/2/3/4 -20287.2470435591/-20157.77332408005/-20042.916837318626/-19903.832830877753
-[2022-05-01 14:27:35.315] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:27:35.329] [svc] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
-[2022-05-01 14:27:35.367] [svc] [[32minfo[m] 
-
-Performing clustering of sub-cluster BBBB with 997 elements
-[2022-05-01 14:27:35.367] [svc] [[32minfo[m] Filtering significant positions...
-[2022-05-01 14:27:36.488] [svc] [[37mtrace[m] Avg coverage for cluster BBBB: 39.81274869994658. Total positions: 366908
-[2022-05-01 14:27:36.935] [svc] [[32minfo[m] Computing similarity matrix...
-Processed:
-[2022-05-01 14:27:36.966]	  0.0%, 0/366908
-[2022-05-01 14:27:39.187]	 10.0%, 36690/366908
-[2022-05-01 14:27:41.322]	 20.0%, 73380/366908
-[2022-05-01 14:27:43.483]	 30.0%, 110070/366908
-[2022-05-01 14:27:45.580]	 40.0%, 146760/366908
-[2022-05-01 14:27:47.741]	 50.0%, 183450/366908
-[2022-05-01 14:27:49.992]	 60.0%, 220140/366908
-[2022-05-01 14:27:52.256]	 70.0%, 256830/366908
-[2022-05-01 14:27:54.496]	 80.0%, 293520/366908
-[2022-05-01 14:27:56.760]	 90.0%, 330210/366908
-[2022-05-01 14:27:58.919]	100.0%, 366900/366908
-[2022-05-01 14:27:58.919]	100.0%, 366908/366908
-
-[2022-05-01 14:27:58.939] [svc] [[37mtrace[m] Normalizing similarity matrix...
-[2022-05-01 14:27:58.948] [svc] [[32minfo[m] Performing spectral clustering...
-[2022-05-01 14:27:59.196] [svc] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 10.167184726240913/10.172844249370188/10.175057683450117/10.18402593083641	aic 1/2/3/4 -20233.36634412438/-20202.651433244155/-20165.06502079953/-20140.9477060878	bic 1/2/3/4 -20135.271328725143/-20001.55665167572/-19860.970473061898/-19733.85339218097
-[2022-05-01 14:27:59.196] [svc] [[37mtrace[m] Attempting to cluster into 2 clusters
-[2022-05-01 14:27:59.215] [svc] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
-[2022-05-01 14:27:59.404] [svc] [[32minfo[m] Performing variant calling against /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/genomes/healthy.fa
-[2022-05-01 14:28:01.252] [svc] [[37mtrace[m] Reading chromosome: 1_maternal (first allele)
-[2022-05-01 14:28:02.253] [svc] [[37mtrace[m] Reading chromosome: >1_paternal (second allele)
-[2022-05-01 14:28:03.496] [svc] [[37mtrace[m] Calling variants on chromosome 1
-[2022-05-01 14:28:04.490] [svc] [[37mtrace[m] Reading chromosome: 2_maternal (first allele)
-[2022-05-01 14:28:05.593] [svc] [[37mtrace[m] Reading chromosome: >2_paternal (second allele)
-[2022-05-01 14:28:06.937] [svc] [[37mtrace[m] Calling variants on chromosome 2
-[2022-05-01 14:28:07.992] [svc] [[37mtrace[m] Reading chromosome: 3_maternal (first allele)
-[2022-05-01 14:28:08.808] [svc] [[37mtrace[m] Reading chromosome: >3_paternal (second allele)
-[2022-05-01 14:28:09.968] [svc] [[37mtrace[m] Calling variants on chromosome 3
-[2022-05-01 14:28:10.866] [svc] [[37mtrace[m] Reading chromosome: 4_maternal (first allele)
-[2022-05-01 14:28:11.586] [svc] [[37mtrace[m] Reading chromosome: >4_paternal (second allele)
-[2022-05-01 14:28:12.644] [svc] [[37mtrace[m] Calling variants on chromosome 4
-[2022-05-01 14:28:13.549] [svc] [[37mtrace[m] Reading chromosome: 5_maternal (first allele)
-[2022-05-01 14:28:14.328] [svc] [[37mtrace[m] Reading chromosome: >5_paternal (second allele)
-[2022-05-01 14:28:15.336] [svc] [[37mtrace[m] Calling variants on chromosome 5
-[2022-05-01 14:28:16.151] [svc] [[37mtrace[m] Reading chromosome: 6_maternal (first allele)
-[2022-05-01 14:28:16.918] [svc] [[37mtrace[m] Reading chromosome: >6_paternal (second allele)
-[2022-05-01 14:28:17.863] [svc] [[37mtrace[m] Calling variants on chromosome 6
-[2022-05-01 14:28:18.639] [svc] [[37mtrace[m] Reading chromosome: 7_maternal (first allele)
-[2022-05-01 14:28:19.352] [svc] [[37mtrace[m] Reading chromosome: >7_paternal (second allele)
-[2022-05-01 14:28:20.264] [svc] [[37mtrace[m] Calling variants on chromosome 7
-[2022-05-01 14:28:20.983] [svc] [[37mtrace[m] Reading chromosome: 8_maternal (first allele)
-[2022-05-01 14:28:21.569] [svc] [[37mtrace[m] Reading chromosome: >8_paternal (second allele)
-[2022-05-01 14:28:22.393] [svc] [[37mtrace[m] Calling variants on chromosome 8
-[2022-05-01 14:28:23.069] [svc] [[37mtrace[m] Reading chromosome: 9_maternal (first allele)
-[2022-05-01 14:28:23.704] [svc] [[37mtrace[m] Reading chromosome: >9_paternal (second allele)
-[2022-05-01 14:28:24.466] [svc] [[37mtrace[m] Calling variants on chromosome 9
-[2022-05-01 14:28:25.020] [svc] [[37mtrace[m] Reading chromosome: 10_maternal (first allele)
-[2022-05-01 14:28:25.573] [svc] [[37mtrace[m] Reading chromosome: >10_paternal (second allele)
-[2022-05-01 14:28:26.319] [svc] [[37mtrace[m] Calling variants on chromosome 10
-[2022-05-01 14:28:26.947] [svc] [[37mtrace[m] Reading chromosome: 11_maternal (first allele)
-[2022-05-01 14:28:27.467] [svc] [[37mtrace[m] Reading chromosome: >11_paternal (second allele)
-[2022-05-01 14:28:28.215] [svc] [[37mtrace[m] Calling variants on chromosome 11
-[2022-05-01 14:28:28.830] [svc] [[37mtrace[m] Reading chromosome: 12_maternal (first allele)
-[2022-05-01 14:28:29.357] [svc] [[37mtrace[m] Reading chromosome: >12_paternal (second allele)
-[2022-05-01 14:28:30.098] [svc] [[37mtrace[m] Calling variants on chromosome 12
-[2022-05-01 14:28:30.702] [svc] [[37mtrace[m] Reading chromosome: 13_maternal (first allele)
-[2022-05-01 14:28:31.180] [svc] [[37mtrace[m] Reading chromosome: >13_paternal (second allele)
-[2022-05-01 14:28:31.820] [svc] [[37mtrace[m] Calling variants on chromosome 13
-[2022-05-01 14:28:32.276] [svc] [[37mtrace[m] Reading chromosome: 14_maternal (first allele)
-[2022-05-01 14:28:32.624] [svc] [[37mtrace[m] Reading chromosome: >14_paternal (second allele)
-[2022-05-01 14:28:33.218] [svc] [[37mtrace[m] Calling variants on chromosome 14
-[2022-05-01 14:28:33.646] [svc] [[37mtrace[m] Reading chromosome: 15_maternal (first allele)
-[2022-05-01 14:28:34.051] [svc] [[37mtrace[m] Reading chromosome: >15_paternal (second allele)
-[2022-05-01 14:28:34.637] [svc] [[37mtrace[m] Calling variants on chromosome 15
-[2022-05-01 14:28:34.993] [svc] [[37mtrace[m] Reading chromosome: 16_maternal (first allele)
-[2022-05-01 14:28:35.328] [svc] [[37mtrace[m] Reading chromosome: >16_paternal (second allele)
-[2022-05-01 14:28:35.838] [svc] [[37mtrace[m] Calling variants on chromosome 16
-[2022-05-01 14:28:36.224] [svc] [[37mtrace[m] Reading chromosome: 17_maternal (first allele)
-[2022-05-01 14:28:36.493] [svc] [[37mtrace[m] Reading chromosome: >17_paternal (second allele)
-[2022-05-01 14:28:36.912] [svc] [[37mtrace[m] Calling variants on chromosome 17
-[2022-05-01 14:28:37.257] [svc] [[37mtrace[m] Reading chromosome: 18_maternal (first allele)
-[2022-05-01 14:28:37.601] [svc] [[37mtrace[m] Reading chromosome: >18_paternal (second allele)
-[2022-05-01 14:28:38.045] [svc] [[37mtrace[m] Calling variants on chromosome 18
-[2022-05-01 14:28:38.407] [svc] [[37mtrace[m] Reading chromosome: 19_maternal (first allele)
-[2022-05-01 14:28:38.599] [svc] [[37mtrace[m] Reading chromosome: >19_paternal (second allele)
-[2022-05-01 14:28:38.847] [svc] [[37mtrace[m] Calling variants on chromosome 19
-[2022-05-01 14:28:39.131] [svc] [[37mtrace[m] Reading chromosome: 20_maternal (first allele)
-[2022-05-01 14:28:39.415] [svc] [[37mtrace[m] Reading chromosome: >20_paternal (second allele)
-[2022-05-01 14:28:39.770] [svc] [[37mtrace[m] Calling variants on chromosome 20
-[2022-05-01 14:28:40.058] [svc] [[37mtrace[m] Reading chromosome: 21_maternal (first allele)
-[2022-05-01 14:28:40.219] [svc] [[37mtrace[m] Reading chromosome: >21_paternal (second allele)
-[2022-05-01 14:28:40.418] [svc] [[37mtrace[m] Calling variants on chromosome 21
-[2022-05-01 14:28:40.587] [svc] [[37mtrace[m] Reading chromosome: 22_maternal (first allele)
-[2022-05-01 14:28:40.755] [svc] [[37mtrace[m] Reading chromosome: >22_paternal (second allele)
-[2022-05-01 14:28:41.027] [svc] [[37mtrace[m] Calling variants on chromosome 22
-[2022-05-01 14:28:41.196] [svc] [[37mtrace[m] Reading chromosome: X_maternal (first allele)
-[2022-05-01 14:28:41.829] [svc] [[32minfo[m] Male genome detected; Simulating homozygous X
-[2022-05-01 14:28:41.954] [svc] [[37mtrace[m] Calling variants on chromosome 23
-[2022-05-01 14:28:42.032] [svc] [[37mtrace[m] Reading chromosome: Y_paternal (first allele)
-[2022-05-01 14:28:42.218] [svc] [[32minfo[m] Simulating homozygous >Y_paternal
-[2022-05-01 14:28:42.264] [svc] [[37mtrace[m] Calling variants on chromosome 24
-[2022-05-01 14:28:42.307] [svc] [[32minfo[m] Done.
-9311.32user 67.70system 11:09.40elapsed 1401%CPU (0avgtext+0avgdata 10279624maxresident)k
-7482760inputs+220088outputs (20major+21461994minor)pagefaults 0swaps
+[2022-05-01 23:35:11.744] [secedo] [[37mtrace[m] Normalizing similarity matrix...
+[2022-05-01 23:35:11.764] [secedo] [[32minfo[m] Performing spectral clustering...
+[2022-05-01 23:35:13.740] [secedo] [[37mtrace[m] Avg log-likelihood for GMM 1/2/3/4 11.907563654162814/11.915547052684621/11.918737464498713/11.92161586115881	aic 1/2/3/4 -47590.254616651255/-47580.18821073849/-47550.949857994856/-47520.463444635236	bic 1/2/3/4 -47478.236567460415/-47350.55120989726/-47203.69390550325/-47055.58854049324
+[2022-05-01 23:35:13.740] [secedo] [[37mtrace[m] Attempting to cluster into 2 clusters
+[2022-05-01 23:35:13.777] [secedo] [[37mtrace[m] Simple Gaussian Model matches data better - stopping the clustering
+[2022-05-01 23:35:13.930] [secedo] [[32minfo[m] Performing variant calling against /cluster/work/grlab/projects/projects2019-secedo/datasets/varsim/genomes/healthy.fa
+[2022-05-01 23:35:16.267] [secedo] [[37mtrace[m] Reading chromosome: 1_maternal (first allele)
+[2022-05-01 23:35:17.959] [secedo] [[37mtrace[m] Reading chromosome: >1_paternal (second allele)
+[2022-05-01 23:35:19.680] [secedo] [[37mtrace[m] Calling variants on chromosome 1
+[2022-05-01 23:35:20.801] [secedo] [[37mtrace[m] Reading chromosome: 2_maternal (first allele)
+[2022-05-01 23:35:22.069] [secedo] [[37mtrace[m] Reading chromosome: >2_paternal (second allele)
+[2022-05-01 23:35:23.663] [secedo] [[37mtrace[m] Calling variants on chromosome 2
+[2022-05-01 23:35:24.849] [secedo] [[37mtrace[m] Reading chromosome: 3_maternal (first allele)
+[2022-05-01 23:35:25.883] [secedo] [[37mtrace[m] Reading chromosome: >3_paternal (second allele)
+[2022-05-01 23:35:27.189] [secedo] [[37mtrace[m] Calling variants on chromosome 3
+[2022-05-01 23:35:28.224] [secedo] [[37mtrace[m] Reading chromosome: 4_maternal (first allele)
+[2022-05-01 23:35:29.225] [secedo] [[37mtrace[m] Reading chromosome: >4_paternal (second allele)
+[2022-05-01 23:35:30.473] [secedo] [[37mtrace[m] Calling variants on chromosome 4
+[2022-05-01 23:35:31.492] [secedo] [[37mtrace[m] Reading chromosome: 5_maternal (first allele)
+[2022-05-01 23:35:32.434] [secedo] [[37mtrace[m] Reading chromosome: >5_paternal (second allele)
+[2022-05-01 23:35:33.617] [secedo] [[37mtrace[m] Calling variants on chromosome 5
+[2022-05-01 23:35:34.538] [secedo] [[37mtrace[m] Reading chromosome: 6_maternal (first allele)
+[2022-05-01 23:35:35.415] [secedo] [[37mtrace[m] Reading chromosome: >6_paternal (second allele)
+[2022-05-01 23:35:36.529] [secedo] [[37mtrace[m] Calling variants on chromosome 6
+[2022-05-01 23:35:37.412] [secedo] [[37mtrace[m] Reading chromosome: 7_maternal (first allele)
+[2022-05-01 23:35:38.241] [secedo] [[37mtrace[m] Reading chromosome: >7_paternal (second allele)
+[2022-05-01 23:35:39.272] [secedo] [[37mtrace[m] Calling variants on chromosome 7
+[2022-05-01 23:35:40.101] [secedo] [[37mtrace[m] Reading chromosome: 8_maternal (first allele)
+[2022-05-01 23:35:40.845] [secedo] [[37mtrace[m] Reading chromosome: >8_paternal (second allele)
+[2022-05-01 23:35:41.786] [secedo] [[37mtrace[m] Calling variants on chromosome 8
+[2022-05-01 23:35:42.545] [secedo] [[37mtrace[m] Reading chromosome: 9_maternal (first allele)
+[2022-05-01 23:35:43.440] [secedo] [[37mtrace[m] Reading chromosome: >9_paternal (second allele)
+[2022-05-01 23:35:44.378] [secedo] [[37mtrace[m] Calling variants on chromosome 9
+[2022-05-01 23:35:45.016] [secedo] [[37mtrace[m] Reading chromosome: 10_maternal (first allele)
+[2022-05-01 23:35:45.702] [secedo] [[37mtrace[m] Reading chromosome: >10_paternal (second allele)
+[2022-05-01 23:35:46.568] [secedo] [[37mtrace[m] Calling variants on chromosome 10
+[2022-05-01 23:35:47.329] [secedo] [[37mtrace[m] Reading chromosome: 11_maternal (first allele)
+[2022-05-01 23:35:48.060] [secedo] [[37mtrace[m] Reading chromosome: >11_paternal (second allele)
+[2022-05-01 23:35:48.922] [secedo] [[37mtrace[m] Calling variants on chromosome 11
+[2022-05-01 23:35:49.629] [secedo] [[37mtrace[m] Reading chromosome: 12_maternal (first allele)
+[2022-05-01 23:35:50.510] [secedo] [[37mtrace[m] Reading chromosome: >12_paternal (second allele)
+[2022-05-01 23:35:51.386] [secedo] [[37mtrace[m] Calling variants on chromosome 12
+[2022-05-01 23:35:52.098] [secedo] [[37mtrace[m] Reading chromosome: 13_maternal (first allele)
+[2022-05-01 23:35:52.692] [secedo] [[37mtrace[m] Reading chromosome: >13_paternal (second allele)
+[2022-05-01 23:35:53.441] [secedo] [[37mtrace[m] Calling variants on chromosome 13
+[2022-05-01 23:35:53.966] [secedo] [[37mtrace[m] Reading chromosome: 14_maternal (first allele)
+[2022-05-01 23:35:54.512] [secedo] [[37mtrace[m] Reading chromosome: >14_paternal (second allele)
+[2022-05-01 23:35:55.204] [secedo] [[37mtrace[m] Calling variants on chromosome 14
+[2022-05-01 23:35:55.657] [secedo] [[37mtrace[m] Reading chromosome: 15_maternal (first allele)
+[2022-05-01 23:35:56.182] [secedo] [[37mtrace[m] Reading chromosome: >15_paternal (second allele)
+[2022-05-01 23:35:56.840] [secedo] [[37mtrace[m] Calling variants on chromosome 15
+[2022-05-01 23:35:57.246] [secedo] [[37mtrace[m] Reading chromosome: 16_maternal (first allele)
+[2022-05-01 23:35:57.708] [secedo] [[37mtrace[m] Reading chromosome: >16_paternal (second allele)
+[2022-05-01 23:35:58.292] [secedo] [[37mtrace[m] Calling variants on chromosome 16
+[2022-05-01 23:35:58.726] [secedo] [[37mtrace[m] Reading chromosome: 17_maternal (first allele)
+[2022-05-01 23:35:59.152] [secedo] [[37mtrace[m] Reading chromosome: >17_paternal (second allele)
+[2022-05-01 23:35:59.687] [secedo] [[37mtrace[m] Calling variants on chromosome 17
+[2022-05-01 23:36:00.098] [secedo] [[37mtrace[m] Reading chromosome: 18_maternal (first allele)
+[2022-05-01 23:36:00.513] [secedo] [[37mtrace[m] Reading chromosome: >18_paternal (second allele)
+[2022-05-01 23:36:01.031] [secedo] [[37mtrace[m] Calling variants on chromosome 18
+[2022-05-01 23:36:01.442] [secedo] [[37mtrace[m] Reading chromosome: 19_maternal (first allele)
+[2022-05-01 23:36:01.754] [secedo] [[37mtrace[m] Reading chromosome: >19_paternal (second allele)
+[2022-05-01 23:36:02.133] [secedo] [[37mtrace[m] Calling variants on chromosome 19
+[2022-05-01 23:36:02.459] [secedo] [[37mtrace[m] Reading chromosome: 20_maternal (first allele)
+[2022-05-01 23:36:02.791] [secedo] [[37mtrace[m] Reading chromosome: >20_paternal (second allele)
+[2022-05-01 23:36:03.207] [secedo] [[37mtrace[m] Calling variants on chromosome 20
+[2022-05-01 23:36:03.536] [secedo] [[37mtrace[m] Reading chromosome: 21_maternal (first allele)
+[2022-05-01 23:36:03.778] [secedo] [[37mtrace[m] Reading chromosome: >21_paternal (second allele)
+[2022-05-01 23:36:04.086] [secedo] [[37mtrace[m] Calling variants on chromosome 21
+[2022-05-01 23:36:04.276] [secedo] [[37mtrace[m] Reading chromosome: 22_maternal (first allele)
+[2022-05-01 23:36:04.535] [secedo] [[37mtrace[m] Reading chromosome: >22_paternal (second allele)
+[2022-05-01 23:36:04.866] [secedo] [[37mtrace[m] Calling variants on chromosome 22
+[2022-05-01 23:36:05.059] [secedo] [[37mtrace[m] Reading chromosome: X_maternal (first allele)
+[2022-05-01 23:36:05.887] [secedo] [[32minfo[m] Male genome detected; Simulating homozygous X
+[2022-05-01 23:36:06.043] [secedo] [[37mtrace[m] Calling variants on chromosome 23
+[2022-05-01 23:36:06.133] [secedo] [[37mtrace[m] Reading chromosome: Y_paternal (first allele)
+[2022-05-01 23:36:06.419] [secedo] [[32minfo[m] Simulating homozygous >Y_paternal
+[2022-05-01 23:36:06.476] [secedo] [[37mtrace[m] Calling variants on chromosome 24
+[2022-05-01 23:36:06.532] [secedo] [[32minfo[m] Done.
+15905.86user 149.36system 22:27.16elapsed 1191%CPU (0avgtext+0avgdata 10245260maxresident)k
+7925232inputs+215328outputs (18major+40077845minor)pagefaults 0swaps

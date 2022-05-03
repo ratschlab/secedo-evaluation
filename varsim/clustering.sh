@@ -100,7 +100,8 @@ function create_pileup() {
 
   mkdir -p ${out_dir}
   mkdir -p ${log_dir}
-  for chromosome in {1..22} X; do # Y was not added - maybe it confuses things
+  #TODO: set back min_different to 3
+  for chromosome in 8; do # {1..22} X; do # Y was not added - maybe it confuses things
           scratch_dir=$(mktemp -d -t pileup-XXXXXXXXXX --tmpdir=/scratch)
           source_files=${base_dir}/${cov}/aligned_cells_split/*_chr${chromosome}.bam*
           num_files=`ls -l ${source_files} | wc -l`
@@ -108,7 +109,7 @@ function create_pileup() {
           copy_command="echo Copying data...; mkdir ${scratch_dir}; cp ${source_files} ${scratch_dir}"
           command="echo Running pileup binary...; /usr/bin/time ${pileup} -i ${scratch_dir}/ -o ${out_dir}/chromosome \
             --num_threads 20 --log_level=trace --min_base_quality 30 --max_coverage 1000 \
-            --chromosomes ${chromosome} | tee ${log_dir}/pileup-${chromosome}.log"
+            --chromosomes ${chromosome} --min_different 0 | tee ${log_dir}/pileup-${chromosome}.log"
           echo "Copy command: ${copy_command}"
           echo "Pileup command: $command"
           # allocating 40G scratch space; for the 1400 simulated Varsim cells, chromosomes 1/2 (the longest) need ~22G
